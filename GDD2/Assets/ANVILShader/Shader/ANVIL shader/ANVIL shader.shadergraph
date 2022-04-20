@@ -5644,7 +5644,7 @@
     },
     "m_Name": "Invert",
     "m_DefaultReferenceName": "Boolean_edc76fb70fa54427816b2f1887e167a1",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "Invert",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
