@@ -31,17 +31,20 @@ public class RoomBatterieManager : MonoBehaviour
     }
 
     [SerializeField] private GameObject roomGO;
+    [SerializeField] private GameObject puzzleGO;
     [SerializeField] private GameObject batteryGO;
     [SerializeField] private GameObject batterySocketGO;
 
     private RoomState roomState = RoomState.IDLE;
     private int maxNumberOfStates;
     private Material roomMat;
+    private Material puzzleMat;
     private bool roomDone = false;
 
     private void Start()
     {
         roomMat = roomGO.GetComponent<MeshRenderer>().materials[0];
+        puzzleMat = puzzleGO.GetComponent<MeshRenderer>().materials[0];
         maxNumberOfStates = Enum.GetValues(typeof(RoomState)).Length;
         batteryGO.SetActive(false);
         batterySocketGO.SetActive(false);
@@ -105,6 +108,7 @@ public class RoomBatterieManager : MonoBehaviour
     {
         int numberState = state ? 0 : 1;
         roomMat.SetInt("Invert", numberState);
+        puzzleMat.SetInt("Invert", numberState);
         
         if(!roomDone)
             HandleDone();
