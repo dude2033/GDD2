@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c3c24efc-d93b-441b-8bc4-0fac3e4146b1}">
+		<property name="assetPath">
+			<value>Foley_MetalBucket.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.2769160997732427</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5c17cebc-c441-4a25-a268-d0e584751061}</destination>
+		</relationship>
+	</object>
+</objects>

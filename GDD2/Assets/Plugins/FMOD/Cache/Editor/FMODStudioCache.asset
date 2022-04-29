@@ -1,0 +1,289 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8974560502195526205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foley/Foley_MetalBucket
+  m_EditorClassIdentifier: 
+  Path: event:/Foley/Foley_MetalBucket
+  Guid:
+    Data1: -785036277
+    Data2: 1224131690
+    Data3: 1228431005
+    Data4: 529903239
+  Banks:
+  - {fileID: -4948495021170851347}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8037392746598037301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Voicelines.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Voicelines.bank
+  Name: Voicelines
+  StudioPath: bank:/Voicelines
+  lastModified: 637864193042423194
+  FileSizes:
+  - Name: Desktop
+    Value: 43904
+  Exists: 1
+--- !u!114 &-7991598866681863801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/FX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/FX.bank
+  Name: FX
+  StudioPath: bank:/FX
+  lastModified: 637864193041672521
+  FileSizes:
+  - Name: Desktop
+    Value: 39648
+  Exists: 1
+--- !u!114 &-7878628218218758364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/SpeechTest1
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/SpeechTest1
+  Guid:
+    Data1: -431947810
+    Data2: 1260097649
+    Data3: 205638825
+    Data4: 560680301
+  Banks:
+  - {fileID: -8037392746598037301}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5738960287703348841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambiance.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Ambiance.bank
+  Name: Ambiance
+  StudioPath: bank:/Ambiance
+  lastModified: 637864193041198603
+  FileSizes:
+  - Name: Desktop
+    Value: 269056
+  Exists: 1
+--- !u!114 &-4948495021170851347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Foley.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Foley.bank
+  Name: Foley
+  StudioPath: bank:/Foley
+  lastModified: 637864193041512377
+  FileSizes:
+  - Name: Desktop
+    Value: 17568
+  Exists: 1
+--- !u!114 &-2658404869305788897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiance/ARP
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiance/ARP
+  Guid:
+    Data1: -129901615
+    Data2: 1078914538
+    Data3: -554668104
+    Data4: -263803734
+  Banks:
+  - {fileID: -5738960287703348841}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16000
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 7012662071495736635}
+  - {fileID: -5738960287703348841}
+  - {fileID: 2190150312401722300}
+  - {fileID: -4948495021170851347}
+  - {fileID: -7991598866681863801}
+  - {fileID: -8037392746598037301}
+  EditorEvents:
+  - {fileID: -2658404869305788897}
+  - {fileID: -8974560502195526205}
+  - {fileID: 1820424393351963284}
+  - {fileID: 116417730633451536}
+  - {fileID: -7878628218218758364}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 2190150312401722300}
+  StringsBanks:
+  - {fileID: 7012662071495736635}
+  cacheTime: 637864193042423194
+  cacheVersion: 10
+--- !u!114 &116417730633451536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Battery/BatteryDeactivate
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Battery/BatteryDeactivate
+  Guid:
+    Data1: 617347307
+    Data2: 1244601344
+    Data3: -1927755366
+    Data4: -1995548142
+  Banks:
+  - {fileID: -7991598866681863801}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1820424393351963284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Battery/BatteryActivate
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Battery/BatteryActivate
+  Guid:
+    Data1: 60804266
+    Data2: 1278245605
+    Data3: -1022355532
+    Data4: 93662324
+  Banks:
+  - {fileID: -7991598866681863801}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2190150312401722300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637864193041692539
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+--- !u!114 &7012662071495736635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637864193041712566
+  FileSizes:
+  - Name: Desktop
+    Value: 1174
+  Exists: 1
