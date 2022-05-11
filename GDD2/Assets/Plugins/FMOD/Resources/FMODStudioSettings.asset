@@ -236,7 +236,6 @@ MonoBehaviour:
   - Ambiance
   - Foley
   - FX
-  - Voicelines
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
