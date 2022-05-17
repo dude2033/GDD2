@@ -39,4 +39,5 @@ Material:
     - Vector1_28922c5e88b742e085c4da096f132c3d: 8.58
     m_Colors:
     - Vector3_69efd46684974928a304893486bcc161: {r: 0.025, g: 0.03, b: 0.025, a: 0}
+    - displacementAmount: {r: 0, g: 0.15, b: 0.05, a: 0}
   m_BuildTextureStacks: []

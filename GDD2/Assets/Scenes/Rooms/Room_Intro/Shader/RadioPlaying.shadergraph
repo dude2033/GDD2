@@ -1119,7 +1119,7 @@
     },
     "m_Name": "DisplacementAmount",
     "m_DefaultReferenceName": "Vector3_69efd46684974928a304893486bcc161",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "displacementAmount",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
