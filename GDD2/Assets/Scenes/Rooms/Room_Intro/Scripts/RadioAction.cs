@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 using UnityEngine.Timeline;
 using UnityEngine.VFX;
 
 public class RadioAction : MonoBehaviour
 {
+    [SerializeField] private string sceneToLoad = "";
     [SerializeField] private PlayableDirector playableDirector;
     [SerializeField] private MeshRenderer radioMeshRenderer;
     [SerializeField] private VisualEffect flyingNotesVFX;
@@ -30,6 +32,11 @@ public class RadioAction : MonoBehaviour
     public void ReceivedSignalStopRadioAnimation()
     {
         StartCoroutine(nameof(StopRadioAnimation));
+    }
+    
+    public void ReceivedSignalLoadScene()
+    {
+        SceneManager.LoadScene(sceneToLoad);
     }
 
     IEnumerator StopRadioAnimation()

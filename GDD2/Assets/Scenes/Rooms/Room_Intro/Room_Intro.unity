@@ -123,54 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &76230485 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 8891e6dd396bb1640a2a394ab15f4cb4, type: 3}
-  m_PrefabInstance: {fileID: 1173493408}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &76230487 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -7635826562936255635, guid: 8891e6dd396bb1640a2a394ab15f4cb4, type: 3}
   m_PrefabInstance: {fileID: 1173493408}
   m_PrefabAsset: {fileID: 0}
---- !u!320 &76230488
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 76230485}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 0}
-    value: {fileID: 0}
-  m_ExposedReferences:
-    m_References: []
---- !u!95 &76230489
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 76230485}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &85358927
 GameObject:
   m_ObjectHideFlags: 0
@@ -3339,6 +3296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffe3786d0a07de04580f178faab0903e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: RoomBatteryScene
   playableDirector: {fileID: 1540814768}
   radioMeshRenderer: {fileID: 76230487}
   flyingNotesVFX: {fileID: 1464111627}
@@ -3359,6 +3317,7 @@ MonoBehaviour:
     m_Signals:
     - {fileID: 11400000, guid: ca4b0c86d498f5746b9300aeb4154c23, type: 2}
     - {fileID: 11400000, guid: 3346fe0285201714eb3e20609a17c783, type: 2}
+    - {fileID: 11400000, guid: dbea632e274bba24d973aa3cdad6577d, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -3376,10 +3335,10 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1540814766}
-          m_TargetAssemblyTypeName: RadioAction, Assembly-CSharp
-          m_MethodName: ReceivedSignalPlayVoiceLine
-          m_Mode: 1
+        - m_Target: {fileID: 1435080422}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3388,10 +3347,12 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1435080422}
-          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1540814766}
+          m_TargetAssemblyTypeName: RadioAction, Assembly-CSharp
+          m_MethodName: ReceivedSignalLoadScene
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
