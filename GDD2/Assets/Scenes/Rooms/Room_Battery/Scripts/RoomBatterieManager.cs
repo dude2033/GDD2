@@ -18,7 +18,7 @@ using UnityEngine.XR.Interaction.Toolkit;
  * place the battery inside the socket
  * invert the shader colors to indicate light
  */
-public class RoomBatterieManager : MonoBehaviour
+public class RoomBatterieManager : RoomManager
 {
     private enum RoomState
     {

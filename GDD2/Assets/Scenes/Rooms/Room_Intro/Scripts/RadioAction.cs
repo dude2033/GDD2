@@ -33,11 +33,6 @@ public class RadioAction : MonoBehaviour
     {
         StartCoroutine(nameof(StopRadioAnimation));
     }
-    
-    public void ReceivedSignalLoadScene()
-    {
-        SceneManager.LoadScene(sceneToLoad);
-    }
 
     IEnumerator StopRadioAnimation()
     {
