@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Rooms/Room_Intro/Room_Intro.unity
+    guid: e87b25446f9623f4f900c5b82df8c723
+  - enabled: 1
+    path: Assets/Scenes/Rooms/Room_Battery/RoomBatteryScene.unity
+    guid: c4b79c93421774549a661fb7bb49caad
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/TriggerAreas.unity
+    guid: 7aa362ca4ff68f149b0f61ccacde065d
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/VRTutorialScene.unity
+    guid: 60fdecd5dc939ae42b4b817a1885240b
+  - enabled: 1
     path: Assets/Scenes/Templates/RoomSceneTemplate.unity
     guid: b890b7f1c7294ed47a9b3c982c0ea4f8
   m_configObjects:
