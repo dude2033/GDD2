@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class SceneProgressionManager : Singleton<SceneProgressionManager>
@@ -11,13 +12,14 @@ public class SceneProgressionManager : Singleton<SceneProgressionManager>
     
     private int currentSceneIndex, lastLoadedSceneIndex;
     private bool isLoading, isUnloading, reachedEnd;
-
     private AsyncOperation loadOP;
+
+    public UnityEvent onProgress;
 
     [ContextMenu("Progress to next scene")]
     public void ProgressWithUnloading() => Progress();
     
-    public void Progress(bool unloadLastScene = true)
+    public void Progress(bool suppressEvent = false, bool unloadLastScene = true)
     {
         if (unloadLastScene)
         {
@@ -28,6 +30,9 @@ public class SceneProgressionManager : Singleton<SceneProgressionManager>
         loadOP.allowSceneActivation = true;
         
         PreloadNextScene();
+        
+        if(!suppressEvent)
+            onProgress.Invoke();
     }
 
 
@@ -113,7 +118,7 @@ public class SceneProgressionManager : Singleton<SceneProgressionManager>
         {
             yield return 0;
         }
-        Progress(false);
+        Progress(true, false);
     }
 
     protected override void OnEnableCallback()
