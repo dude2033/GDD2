@@ -113,6 +113,13 @@ namespace FMODUnity
                 Stop();
             }
         }
+        
+        public void ChangeEvent(EventReference newEvent)
+        {
+            EventReference = newEvent;
+            Stop();
+            Lookup();
+        }
 
         void Lookup()
         {
