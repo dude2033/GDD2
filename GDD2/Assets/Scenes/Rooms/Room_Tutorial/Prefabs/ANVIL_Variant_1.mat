@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ANVIL_Variant_1
+  m_Shader: {fileID: -6465566751694194690, guid: 399015cdc3d6044458fb9483bb885f35, type: 3}
+  m_ShaderKeywords: MAIN_LIGHT_CALCULATE_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _SHADOWS_SOFT
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _CalculateMainLights_9e5a39d884a84fadb17ef504148d69d0_Texture2D0b6e62f5ca5d4a389a51897bffdc294f_3624673076:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - BOOLEAN_10EFBC3296D04067AC82DA11956488EB: 1
+    - BOOLEAN_4F88E9396EDE4DCCAC4539F08B70C155: 1
+    - Boolean_a5f158bef43743b288cbf50f813ebb81: 0
+    - Boolean_edc76fb70fa54427816b2f1887e167a1: 1
+    - Invert: 1
+    - Vector1_0828afaab7734826af1fb5dc245433a1: 2.14
+    - Vector1_1457f1fb43bb42e9bc580d9638a3c5ba: -1.25
+    - Vector1_305d42f99f2048359d91b96e2d8f1a91: 10.2
+    - Vector1_31a31157fcce49b6898b57d1d22e6212: 17.27
+    - Vector1_36378606d5594057b9f975084d3ca340: 1.43
+    - Vector1_7a6c8bd8b9e24d2da73fe40989ab7007: 2.45
+    - Vector1_8be22f2ef3c34622bde507ac0ce16be2: 0.4
+    - Vector1_9a16349f781e45e6a653b4ef4895851e: 12.71
+    - Vector1_a45d3c8b9e3d465da7505c952f192381: 1.31
+    - Vector1_b386244059604c8895ba03706951e10e: 5.16
+    - Vector1_cfc749142569453e93ee316c3e4d0291: 0.00066
+    - Vector1_d4e3caea69004a1692a3d98c20bad6f7: 0.00157
+    - Vector1_e53863ecac264444ba204faa889c6a86: -1.03
+    - Vector1_f19fbbeba0fb439186452e1ce458d2c3: 1.95
+    m_Colors:
+    - Color_2fa6572fbe2b4451bf10e66f08f5f87e: {r: 1, g: 1, b: 1, a: 0}
+    - Color_cd8635f808e14a3b816b81e2f970d2af: {r: 0.97199994, g: 0.97199994, b: 0.97199994, a: 0}
+    - Color_d728353e819f44d2898ebda98e503e00: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

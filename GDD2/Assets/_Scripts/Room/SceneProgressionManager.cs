@@ -49,6 +49,8 @@ public class SceneProgressionManager : Singleton<SceneProgressionManager>
             return;
         
         RoomSetup roomSetup = roomSetups[roomSetups.Length - 1];
+        roomSetup.destroyObjects = true;
+        roomSetup.setupOnStart = false;
         roomSetup.SetupRoom();
     }
     

@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(StudioEventEmitter))]
 public class Companion : Singleton<Companion>
@@ -14,6 +16,18 @@ public class Companion : Singleton<Companion>
     private Dictionary<string, EventReference> roomVoiceLineDictionary = new Dictionary<string, EventReference>();
 
     private StudioEventEmitter emitter;
+
+    private void Start()
+    {
+        // disable the mesh
+        // the companion must be explicitly activated
+        transform.GetChild(0).gameObject.SetActive(false);
+    }
+
+    public void ActivateCompanion()
+    {
+        transform.GetChild(0).gameObject.SetActive(true);
+    }
 
     public void LoadRoomVoiceLineList(List<VoiceLineListEntry> newVoiceLineList)
     {
@@ -55,6 +69,12 @@ public class Companion : Singleton<Companion>
         {
             Debug.LogError("voice line dictionary does not contain key: " + voiceLineID);
         }
+    }
+
+    public void ChangeVoiceLines(List<VoiceLineListEntry> newVoiceLines)
+    {
+        roomVoiceLineList = newVoiceLines;
+        GenerateVoiceLineDictionary();
     }
     
     protected override void OnApplicationQuitCallback()
