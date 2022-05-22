@@ -123,11 +123,7 @@
 			<destination>{35a3baed-0fc8-400c-a371-a1067b21ff52}</destination>
 			<destination>{bbd36e74-bf3f-498e-a9ec-6c1187089a0c}</destination>
 			<destination>{078aecd7-179f-4428-a5d0-6d1b3e87a8da}</destination>
-			<destination>{591d3225-82fb-4137-8aa3-f4845d28e5c8}</destination>
-			<destination>{9692e4ae-98fe-4db9-8d4b-aa7b25cdd4b5}</destination>
-			<destination>{f18d6d75-9aa8-463d-ae25-872323eb4504}</destination>
-			<destination>{fbc813c3-4708-4795-8cb7-b9bdc1a0a3ec}</destination>
-			<destination>{74774471-0a23-42db-a43a-cdc72102137e}</destination>
+			<destination>{5922447d-018c-425d-94c7-e8561653385a}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{be44d3d5-2bdf-4fd4-ad77-13005ad15b3f}" />
@@ -156,54 +152,13 @@
 			<value>83</value>
 		</property>
 	</object>
-	<object class="ChorusEffect" id="{591d3225-82fb-4137-8aa3-f4845d28e5c8}">
-		<property name="rate">
-			<value>0.479999989</value>
+	<object class="ProxyEffect" id="{5922447d-018c-425d-94c7-e8561653385a}">
+		<property name="inputFormat">
+			<value>2</value>
 		</property>
-		<property name="depth">
-			<value>37.5</value>
-		</property>
-		<property name="mix">
-			<value>81</value>
-		</property>
-	</object>
-	<object class="DelayEffect" id="{9692e4ae-98fe-4db9-8d4b-aa7b25cdd4b5}">
-		<property name="delay">
-			<value>8.60000038</value>
-		</property>
-		<property name="level">
-			<value>-5.5</value>
-		</property>
-	</object>
-	<object class="PitchShifterEffect" id="{f18d6d75-9aa8-463d-ae25-872323eb4504}">
-		<property name="pitch">
-			<value>1.12</value>
-		</property>
-		<property name="fftSize">
-			<value>2800</value>
-		</property>
-		<property name="overlap">
-			<value>12.6000004</value>
-		</property>
-		<property name="maxChannels">
-			<value>8.80000019</value>
-		</property>
-	</object>
-	<object class="ThreeEQEffect" id="{fbc813c3-4708-4795-8cb7-b9bdc1a0a3ec}">
-		<property name="lowGain">
-			<value>-5</value>
-		</property>
-		<property name="midGain">
-			<value>2.5</value>
-		</property>
-		<property name="crossoverSlope">
-			<value>0</value>
-		</property>
-	</object>
-	<object class="LimiterEffect" id="{74774471-0a23-42db-a43a-cdc72102137e}">
-		<property name="boost">
-			<value>6.4000001</value>
-		</property>
+		<relationship name="preset">
+			<destination>{7bae5eca-0f4c-443f-872f-38415133a007}</destination>
+		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{18e13418-c6a5-4a29-99ac-4312aa4a9e14}" />
 </objects>

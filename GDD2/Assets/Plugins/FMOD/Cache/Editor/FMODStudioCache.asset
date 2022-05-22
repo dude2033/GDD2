@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/FX.bank
   Name: FX
   StudioPath: bank:/FX
-  lastModified: 637884057052385447
+  lastModified: 637888376825059453
   FileSizes:
   - Name: Desktop
     Value: 359296
@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Ambiance.bank
   Name: Ambiance
   StudioPath: bank:/Ambiance
-  lastModified: 637884057052025117
+  lastModified: 637888376824669099
   FileSizes:
   - Name: Desktop
     Value: 2583168
@@ -82,7 +82,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Foley.bank
   Name: Foley
   StudioPath: bank:/Foley
-  lastModified: 637884057052195271
+  lastModified: 637888376824849269
   FileSizes:
   - Name: Desktop
     Value: 17568
@@ -107,7 +107,7 @@ MonoBehaviour:
     Data4: -1717089149
   Banks:
   - {fileID: -5738960287703348841}
-  IsStream: 1
+  IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters: []
@@ -134,13 +134,67 @@ MonoBehaviour:
     Data4: -263803734
   Banks:
   - {fileID: -5738960287703348841}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 16000
+--- !u!114 &-1867738389974803072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/TutorialRoom/VoiceLines/TutorialStepDone
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/TutorialRoom/VoiceLines/TutorialStepDone
+  Guid:
+    Data1: 1564839908
+    Data2: 1221218430
+    Data3: 572912550
+    Data4: -1476875735
+  Banks:
+  - {fileID: 4570712113697275973}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-986360134685353563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/TutorialRoom/VoiceLines/TutorialStepIntro
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/TutorialRoom/VoiceLines/TutorialStepIntro
+  Guid:
+    Data1: -1347897194
+    Data2: 1241540228
+    Data3: -2132858992
+    Data4: 842025952
+  Banks:
+  - {fileID: 4570712113697275973}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-37428237770656202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,12 +249,16 @@ MonoBehaviour:
   - {fileID: -3835939254709630180}
   - {fileID: -37428237770656202}
   - {fileID: 1748383846367774013}
+  - {fileID: 6623953713137487923}
+  - {fileID: 2537062072775313079}
+  - {fileID: -986360134685353563}
+  - {fileID: -1867738389974803072}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2190150312401722300}
   StringsBanks:
   - {fileID: 7012662071495736635}
-  cacheTime: 637884057052605646
+  cacheTime: 637888376826831053
   cacheVersion: 10
 --- !u!114 &116417730633451536
 MonoBehaviour:
@@ -249,7 +307,7 @@ MonoBehaviour:
     Data4: 218748057
   Banks:
   - {fileID: -7991598866681863801}
-  IsStream: 1
+  IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
@@ -298,11 +356,38 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637884057052415471
+  lastModified: 637888376825099514
   FileSizes:
   - Name: Desktop
     Value: 1036
   Exists: 1
+--- !u!114 &2537062072775313079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/TutorialRoom/VoiceLines/TutorialStepButton
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/TutorialRoom/VoiceLines/TutorialStepButton
+  Guid:
+    Data1: 322002577
+    Data2: 1124794375
+    Data3: 65501367
+    Data4: 596789421
+  Banks:
+  - {fileID: 4570712113697275973}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &4570712113697275973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,11 +403,38 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Voice.bank
   Name: Voice
   StudioPath: bank:/Voice
-  lastModified: 637884057052605646
+  lastModified: 637888376826831053
   FileSizes:
   - Name: Desktop
-    Value: 87264
+    Value: 574560
   Exists: 1
+--- !u!114 &6623953713137487923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/TutorialRoom/VoiceLines/TutorialStepHint
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/TutorialRoom/VoiceLines/TutorialStepHint
+  Guid:
+    Data1: -1311979423
+    Data2: 1161466658
+    Data3: -190527565
+    Data4: 447477484
+  Banks:
+  - {fileID: 4570712113697275973}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7012662071495736635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,8 +450,8 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637884057052425478
+  lastModified: 637888376825119502
   FileSizes:
   - Name: Desktop
-    Value: 1280
+    Value: 1482
   Exists: 1
