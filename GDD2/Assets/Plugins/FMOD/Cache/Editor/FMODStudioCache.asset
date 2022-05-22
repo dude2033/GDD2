@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/FX.bank
   Name: FX
   StudioPath: bank:/FX
-  lastModified: 637888376825059453
+  lastModified: 637888442119427327
   FileSizes:
   - Name: Desktop
     Value: 359296
@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Ambiance.bank
   Name: Ambiance
   StudioPath: bank:/Ambiance
-  lastModified: 637888376824669099
+  lastModified: 637888442119077328
   FileSizes:
   - Name: Desktop
     Value: 2583168
@@ -82,7 +82,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Foley.bank
   Name: Foley
   StudioPath: bank:/Foley
-  lastModified: 637888376824849269
+  lastModified: 637888442119237477
   FileSizes:
   - Name: Desktop
     Value: 17568
@@ -114,6 +114,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 192000
+--- !u!114 &-2852447526244684346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/General/NoMoreHints
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/General/NoMoreHints
+  Guid:
+    Data1: 1179511115
+    Data2: 1094219055
+    Data3: 1462006949
+    Data4: -1072791831
+  Banks:
+  - {fileID: 4570712113697275973}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2658404869305788897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,7 +188,7 @@ MonoBehaviour:
     Data4: -1476875735
   Banks:
   - {fileID: 4570712113697275973}
-  IsStream: 1
+  IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
@@ -188,7 +215,7 @@ MonoBehaviour:
     Data4: 842025952
   Banks:
   - {fileID: 4570712113697275973}
-  IsStream: 1
+  IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
@@ -253,12 +280,13 @@ MonoBehaviour:
   - {fileID: 2537062072775313079}
   - {fileID: -986360134685353563}
   - {fileID: -1867738389974803072}
+  - {fileID: -2852447526244684346}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2190150312401722300}
   StringsBanks:
   - {fileID: 7012662071495736635}
-  cacheTime: 637888376826831053
+  cacheTime: 637888442119707577
   cacheVersion: 10
 --- !u!114 &116417730633451536
 MonoBehaviour:
@@ -356,7 +384,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637888376825099514
+  lastModified: 637888442119447339
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -381,7 +409,7 @@ MonoBehaviour:
     Data4: 596789421
   Banks:
   - {fileID: 4570712113697275973}
-  IsStream: 1
+  IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
@@ -403,10 +431,10 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Voice.bank
   Name: Voice
   StudioPath: bank:/Voice
-  lastModified: 637888376826831053
+  lastModified: 637888442119707577
   FileSizes:
   - Name: Desktop
-    Value: 574560
+    Value: 602272
   Exists: 1
 --- !u!114 &6623953713137487923
 MonoBehaviour:
@@ -428,7 +456,7 @@ MonoBehaviour:
     Data4: 447477484
   Banks:
   - {fileID: 4570712113697275973}
-  IsStream: 1
+  IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
@@ -450,8 +478,8 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637888376825119502
+  lastModified: 637888442119467359
   FileSizes:
   - Name: Desktop
-    Value: 1482
+    Value: 1532
   Exists: 1

@@ -873,6 +873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   insultList: []
   roomVoiceLineList: []
+  hintSignalDefinition: {fileID: 11400000, guid: ac616db0e36850947a9abf68c0dea63d, type: 2}
 --- !u!114 &7202240546583781821
 MonoBehaviour:
   m_ObjectHideFlags: 0

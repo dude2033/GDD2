@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using FMOD.Studio;
 using FMODUnity;
+using NodeCanvas.Framework;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -15,7 +16,10 @@ public class Companion : Singleton<Companion>
     [SerializeField] private List<VoiceLineListEntry> roomVoiceLineList = new List<VoiceLineListEntry>();
     private Dictionary<string, EventReference> roomVoiceLineDictionary = new Dictionary<string, EventReference>();
 
-    private StudioEventEmitter emitter;
+    [Header("FSM Signal Emitter")] 
+    [SerializeField] private SignalDefinition hintSignalDefinition;
+
+    public StudioEventEmitter emitter;
 
     private void Start()
     {
@@ -69,6 +73,18 @@ public class Companion : Singleton<Companion>
         {
             Debug.LogError("voice line dictionary does not contain key: " + voiceLineID);
         }
+    }
+    
+    public bool CheckIfPlaying() 
+    {
+        return emitter.IsPlaying();
+    }
+    
+    // triggers the next available hint by consulting the room FSM
+    [ContextMenu("Trigger hint")]
+    public void TriggerHint()
+    {
+        hintSignalDefinition.Invoke(null, null, true);
     }
 
     public void ChangeVoiceLines(List<VoiceLineListEntry> newVoiceLines)

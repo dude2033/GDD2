@@ -1,4 +1,7 @@
+using System.Collections;
+using NodeCanvas.StateMachines;
 using UnityEngine;
+using UnityEngine.Timeline;
 
 public class RoomTutorialManager : RoomManager
 {
@@ -6,10 +9,11 @@ public class RoomTutorialManager : RoomManager
     {
         Companion.Instance.ActivateCompanion();
     }
-
+    
+    // signals are handled by the timeline
     public void SignalPlayIntroVoiceLine()
     {
-        Debug.Log("play intro voice line");
-        Companion.Instance.TriggerVoiceLine("tutorial");
+        AdvanceRoomFSM();
     }
+    
 }
