@@ -611,20 +611,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _parentBlackboard: {fileID: 0}
   _serializedBlackboard: '{"_variables":{"boundingVolume":{"_value":1,"_name":"boundingVolume","_id":"de1a8038-66f0-48df-85cb-2917454cd1ab","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_":{"_name":"_","_id":"eaae86fa-3348-4559-a240-149b642f8d18","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"redButton":{"_value":2,"_name":"redButton","_id":"97b0800d-4b1a-4e9e-a0ca-2080424bff83","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
   _objectReferences:
   - {fileID: 0}
   - {fileID: 2037812765}
+  - {fileID: 1524924872}
   _serializedVariables:
   - _json: '{"_value":1,"_name":"boundingVolume","_id":"de1a8038-66f0-48df-85cb-2917454cd1ab","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
     _references:
     - {fileID: 0}
     - {fileID: 2037812765}
-  - _json: '{"_name":"_","_id":"eaae86fa-3348-4559-a240-149b642f8d18","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+  - _json: '{"_value":1,"_name":"redButton","_id":"97b0800d-4b1a-4e9e-a0ca-2080424bff83","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
-    _references: []
+    _references:
+    - {fileID: 0}
+    - {fileID: 1524924872}
 --- !u!114 &596208613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -764,6 +767,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 482356247}
+  plusXEnter: {fileID: 11400000, guid: b676623e20138ec4b8f8b38ecef6369d, type: 2}
+  plusXExit: {fileID: 11400000, guid: 9a620556b4b724d4d95dd032b1cd63bf, type: 2}
+  plusYEnter: {fileID: 11400000, guid: bc71be2f8ce819442a40b8cc944332bb, type: 2}
+  plusYExit: {fileID: 11400000, guid: beeb66d4917735c439479b135a50ed44, type: 2}
+  plusZEnter: {fileID: 11400000, guid: 25099c086f728764d97d95e6ca2cb950, type: 2}
+  plusZExit: {fileID: 11400000, guid: 529307ea66a7bff4dbf86295ef769582, type: 2}
+  minusXEnter: {fileID: 11400000, guid: 019deb19b4b7d1644ae8b5ce3d6132d6, type: 2}
+  minusXExit: {fileID: 11400000, guid: dd9d494b4995c034a9aa5849433b15f9, type: 2}
+  minusYEnter: {fileID: 11400000, guid: ead217e475433c64cbcb2177124d260f, type: 2}
+  minusYExit: {fileID: 11400000, guid: 801b4ece0ae228b43a4c7cba94c2a130, type: 2}
+  minusZEnter: {fileID: 11400000, guid: ccb21306da649b2488fdc109947ea826, type: 2}
+  minusZExit: {fileID: 11400000, guid: 3920d699928d5cb4bbc1373a9b7ab488, type: 2}
   onPlusXEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -799,19 +814,7 @@ MonoBehaviour:
       m_Calls: []
   onMinusZExit:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 596208610}
-        m_TargetAssemblyTypeName: RoomManager, Assembly-CSharp
-        m_MethodName: AdvanceRoomFSM
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &770601174
 GameObject:
   m_ObjectHideFlags: 0

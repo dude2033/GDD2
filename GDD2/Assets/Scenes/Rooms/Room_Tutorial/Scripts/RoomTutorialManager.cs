@@ -5,6 +5,8 @@ using UnityEngine.Timeline;
 
 public class RoomTutorialManager : RoomManager
 {
+    private bool lookedAtPlusZ = false;
+    
     private void Start()
     {
         Companion.Instance.ActivateCompanion();
@@ -14,6 +16,10 @@ public class RoomTutorialManager : RoomManager
     public void SignalPlayIntroVoiceLine()
     {
         AdvanceRoomFSM();
+    }
+
+    public void LookedAtPlusZ()
+    {
     }
     
 }

@@ -10,10 +10,13 @@ public class RoomManager : MonoBehaviour
     [ContextMenu("Proceed to next room")]
     public void ProceedToNextRoom()
     {
-        SceneProgressionManager.Instance.Progress();
+        if(SceneProgressionManager.Instance)
+            SceneProgressionManager.Instance.Progress();
+        else
+            Debug.LogWarning("there is no scene manager - did you load the scene from the main scene?");
     }
     
-    [ContextMenu("advance room fsm")]
+    [ContextMenu("Advance room FSM")]
     public void AdvanceRoomFSM()
     {
         advanceRoomSignalDefinition.Invoke(null, null, true);

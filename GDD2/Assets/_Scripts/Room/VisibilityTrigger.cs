@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using NodeCanvas.Framework;
 using Unity.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -11,6 +12,26 @@ using UnityEngine.Events;
 public class VisibilityTrigger : MonoBehaviour
 {
     [SerializeField] private Transform playerCamera;
+
+    [Header("FSM Trigger")] 
+    [SerializeField] private SignalDefinition plusXEnter;
+    [SerializeField] private SignalDefinition plusXExit;
+    
+    [SerializeField] private SignalDefinition plusYEnter;
+    [SerializeField] private SignalDefinition plusYExit;
+    
+    [SerializeField] private SignalDefinition plusZEnter;
+    [SerializeField] private SignalDefinition plusZExit;
+    
+    [SerializeField] private SignalDefinition minusXEnter;
+    [SerializeField] private SignalDefinition minusXExit;
+    
+    [SerializeField] private SignalDefinition minusYEnter;
+    [SerializeField] private SignalDefinition minusYExit;
+    
+    [SerializeField] private SignalDefinition minusZEnter;
+    [SerializeField] private SignalDefinition minusZExit;
+    
 
     [Header("Events")]
     public UnityEvent onPlusXEnter;
@@ -44,6 +65,9 @@ public class VisibilityTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!playerCamera)
+            playerCamera = Camera.main.transform;
+        
         CheckVisibilites();
     }
 
@@ -86,31 +110,52 @@ public class VisibilityTrigger : MonoBehaviour
     private void TriggerEvent(Vector3 snappedDirection, bool entered = true)
     {
         UnityEvent EventToTrigger = null;
+        SignalDefinition signalToTrigger = null;
 
         if (!Mathf.Approximately(snappedDirection[2], 0))
         {
             if (snappedDirection[2] > 0)
+            {
                 EventToTrigger = entered ? onPlusZEnter : onPlusZExit;
+                signalToTrigger = entered ? plusZEnter : plusZExit;
+            }
             else
+            {
                 EventToTrigger = entered ? onMinusZEnter : onMinusZExit;
+                signalToTrigger = entered ? minusZEnter : minusZExit;
+            }
         }
 
         if (!Mathf.Approximately(snappedDirection[1], 0))
         {
             if (snappedDirection[1] > 0)
+            {
                 EventToTrigger = entered ? onPlusYEnter : onPlusYExit;
+                signalToTrigger = entered ? plusYEnter : plusYExit;
+            }
             else
+            {
                 EventToTrigger = entered ? onMinusYEnter : onMinusYExit;
+                signalToTrigger = entered ? minusYEnter : minusYExit;
+            }
         }
         
         if (EventToTrigger == null)
         {
             if (snappedDirection[0] > 0)
+            {
                 EventToTrigger = entered ? onPlusXEnter : onPlusXExit;
+                signalToTrigger = entered ? plusXEnter : plusXExit;
+            }
             else
+            {
                 EventToTrigger = entered ? onMinusXEnter : onMinusXExit;
+                signalToTrigger = entered ? minusXEnter : minusXExit;
+            }
+                
         }
         
         EventToTrigger.Invoke();
+        signalToTrigger.Invoke(null, null, true);
     }
 }
