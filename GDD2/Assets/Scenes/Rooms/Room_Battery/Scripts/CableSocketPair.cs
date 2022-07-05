@@ -4,7 +4,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class CableSocketPair : MonoBehaviour
 {
-    [SerializeField] private XRSocketInteractor cableSocketA, cableSocketB;
+    [SerializeField] public XRSocketInteractor cableSocketA, cableSocketB;
     public bool isConnected = false;
 
     public UnityEvent connectionEstablishedEvent;

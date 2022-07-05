@@ -59,14 +59,17 @@ public class VisibilityTrigger : MonoBehaviour
     void Start()
     {
         if(!playerCamera)
-            playerCamera = Camera.main.transform;
+            playerCamera = Camera.main?.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
         if(!playerCamera)
-            playerCamera = Camera.main.transform;
+            playerCamera = Camera.main?.transform;
+        
+        if(!playerCamera)
+            return;
         
         CheckVisibilites();
     }

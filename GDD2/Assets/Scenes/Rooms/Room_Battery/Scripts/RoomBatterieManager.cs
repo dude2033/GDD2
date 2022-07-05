@@ -20,23 +20,13 @@ using UnityEngine.XR.Interaction.Toolkit;
  */
 public class RoomBatterieManager : RoomManager
 {
-    private enum RoomState
-    {
-        IDLE,
-        START,
-        FIRSTLOOK,
-        SECONDLOOK,
-        THIRDLOOK,
-        DONE
-    }
+    [SerializeField] private Material standardRoomMaterial;
+    public bool lightsOn = false;
+    public bool suppressMaterialInvert = false;
 
     [SerializeField] private GameObject roomGO;
     [SerializeField] private GameObject puzzleGO;
-    [SerializeField] private GameObject batteryGO;
-    [SerializeField] private GameObject batterySocketGO;
 
-    private RoomState roomState = RoomState.IDLE;
-    private int maxNumberOfStates;
     private Material roomMat;
     private Material puzzleMat;
     private bool roomDone = false;
@@ -45,72 +35,22 @@ public class RoomBatterieManager : RoomManager
     {
         roomMat = roomGO.GetComponent<MeshRenderer>().materials[0];
         puzzleMat = puzzleGO.GetComponent<MeshRenderer>().materials[0];
-        maxNumberOfStates = Enum.GetValues(typeof(RoomState)).Length;
-        batteryGO.SetActive(false);
-        batterySocketGO.SetActive(false);
-
-        // for debugging - normally this should be called from the previous room
-        StartRoom();
     }
     
-    public void HandleStateVisualTrigger()
-    {
-        switch (roomState)
-        {
-            case RoomState.FIRSTLOOK:
-                IncreaseState();
-                break;
-            case RoomState.SECONDLOOK:
-                HandleSecondLook();
-                IncreaseState();
-                break;
-            case RoomState.THIRDLOOK:
-                HandleThirdLook();
-                IncreaseState();
-                break;
-        }
-    }
-
-    [ContextMenu("Increase State")]
-    public void IncreaseState()
-    {
-        roomState++;
-        if ((int)roomState == maxNumberOfStates)
-            roomState = RoomState.IDLE;
-    }
-
-    [ContextMenu("Start Room")]
-    public void StartRoom()
-    {
-        roomState = RoomState.FIRSTLOOK;
-    }
-
-    private void HandleSecondLook()
-    {
-        // spawn battery
-        batteryGO.SetActive(true);
-    }
-    
-    private void HandleThirdLook()
-    {
-        // spawn socket
-        batterySocketGO.SetActive(true);
-    }
-    
-    public void HandleDone()
-    { 
-        // object placed inside socket
-        // do something
-        roomDone = true;
-    }
-
     public void SetLights(bool state)
     {
+        if(suppressMaterialInvert)
+            return;
+        
         int numberState = state ? 0 : 1;
+        lightsOn = state;
         roomMat.SetInt("Invert", numberState);
         puzzleMat.SetInt("Invert", numberState);
-        
-        if(!roomDone)
-            HandleDone();
+    }
+    
+    public void SetRoomMaterialWhite()
+    {
+        suppressMaterialInvert = true;
+        roomMat.SetInt("Invert", 0);
     }
 }

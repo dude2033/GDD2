@@ -883,6 +883,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 707024606832978071}
+  - component: {fileID: 5398333133449300157}
   m_Layer: 0
   m_Name: Cable
   m_TagString: Untagged
@@ -908,6 +909,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5398333133449300157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707024606832978070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d6f97e0dd24dc4cad4c064d076c595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cableStart: {fileID: 7587988465927576358}
 --- !u!1 &707024606839269777
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,14 +1417,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 118538c0f5d82184f86567db5a89578c, type: 3}
---- !u!1 &7587988466619209309 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 118538c0f5d82184f86567db5a89578c, type: 3}
-  m_PrefabInstance: {fileID: 7317393503813921548}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7063372519719898343 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 118538c0f5d82184f86567db5a89578c, type: 3}
+  m_PrefabInstance: {fileID: 7317393503813921548}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7587988466619209309 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 118538c0f5d82184f86567db5a89578c, type: 3}
   m_PrefabInstance: {fileID: 7317393503813921548}
   m_PrefabAsset: {fileID: 0}
 --- !u!54 &7317393503813921546
