@@ -256,6 +256,27 @@ MonoBehaviour:
   advanceHintIndex: {fileID: 11400000, guid: ac616db0e36850947a9abf68c0dea63d, type: 2}
   advanceRoomFSM: {fileID: 11400000, guid: 6483a051403ff2944afaf8a65c33ffa2, type: 2}
   XROrigin: {fileID: 2022135607}
+--- !u!1 &607984990 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7202240546583781817, guid: 7a0ca1daebe8caf448f24c7bce89dafd, type: 3}
+  m_PrefabInstance: {fileID: 6036231819162911984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &607984991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607984990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
 --- !u!1 &716634808
 GameObject:
   m_ObjectHideFlags: 0
