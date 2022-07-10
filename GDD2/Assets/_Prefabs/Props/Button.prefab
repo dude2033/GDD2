@@ -46,7 +46,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.07, y: 0.02, z: 0.07}
+  m_Size: {x: 0.07, y: 0.021, z: 0.07}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &5385632365126467519
 Rigidbody:
@@ -63,7 +63,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!153 &5385632365126467516
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -76,7 +76,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 1.8999994, z: 0}
+  m_ConnectedAnchor: {x: 0, y: 1.5833378, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -209,7 +209,7 @@ Transform:
   m_GameObject: {fileID: 5385632366028245096}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.01, z: 0.1}
+  m_LocalScale: {x: 0.1, y: 0.012, z: 0.1}
   m_Children: []
   m_Father: {fileID: 5385632366517875846}
   m_RootOrder: 0
@@ -272,7 +272,7 @@ MeshCollider:
   m_GameObject: {fileID: 5385632366028245096}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -320,7 +320,7 @@ Transform:
   m_GameObject: {fileID: 5385632366276872362}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.092757, y: 0.0092757, z: 0.092757}
+  m_LocalScale: {x: 0.092, y: 0.01104, z: 0.092}
   m_Children: []
   m_Father: {fileID: 5385632365126467506}
   m_RootOrder: 0
