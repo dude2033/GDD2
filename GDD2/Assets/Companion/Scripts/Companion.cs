@@ -18,6 +18,9 @@ public class Companion : Singleton<Companion>
 
     [Header("FSM Signal Emitter")] 
     [SerializeField] private SignalDefinition hintSignalDefinition;
+    
+    [Header("FX")] 
+    [SerializeField] private GameObject particleFX;
 
     public StudioEventEmitter emitter;
 
@@ -74,7 +77,9 @@ public class Companion : Singleton<Companion>
             Debug.LogError("voice line dictionary does not contain key: " + voiceLineID);
         }
     }
-    
+
+    public void SetParticleFX(bool state) => particleFX.SetActive(state);
+
     public bool CheckIfPlaying() 
     {
         return emitter.IsPlaying();

@@ -13,23 +13,11 @@
 	</object>
 	<object class="EffectChain" id="{3df9ab68-0b17-4d63-a1ba-9816840f8c4d}">
 		<relationship name="effects">
-			<destination>{7ed37b6c-0af9-4f10-a1b5-8c23303baa26}</destination>
 			<destination>{4cc3da45-479f-4d90-affc-78be220e103e}</destination>
 			<destination>{6efde223-5718-4063-8820-a5111e4ceb60}</destination>
 			<destination>{3ebfcd41-b857-4fb1-860e-e067c2620abf}</destination>
 			<destination>{9dd3036e-ae76-4f48-bb23-c07600a847bc}</destination>
 		</relationship>
-	</object>
-	<object class="ChorusEffect" id="{7ed37b6c-0af9-4f10-a1b5-8c23303baa26}">
-		<property name="rate">
-			<value>0.479999989</value>
-		</property>
-		<property name="depth">
-			<value>37.5</value>
-		</property>
-		<property name="mix">
-			<value>81</value>
-		</property>
 	</object>
 	<object class="DelayEffect" id="{4cc3da45-479f-4d90-affc-78be220e103e}">
 		<property name="delay">

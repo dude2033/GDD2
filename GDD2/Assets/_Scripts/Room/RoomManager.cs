@@ -6,7 +6,9 @@ public class RoomManager : MonoBehaviour
 {
     [SerializeField] private SignalDefinition advanceRoomSignalDefinition;
     private Animator proceed;
-    
+
+    // Room FSM functions
+    #region Room FSM
     [ContextMenu("Proceed to next room")]
     public void ProceedToNextRoom()
     {
@@ -17,13 +19,14 @@ public class RoomManager : MonoBehaviour
     }
     
     [ContextMenu("Advance room FSM")]
-    public void AdvanceRoomFSM()
-    {
-        advanceRoomSignalDefinition.Invoke(null, null, true);
-    }
+    public void AdvanceRoomFSM() => advanceRoomSignalDefinition.Invoke(null, null, true);
     
-    public void PlayCompanionVoiceLine(string voiceLineID)
-    {
-        Companion.Instance.TriggerVoiceLine(voiceLineID);
-    }
+    #endregion
+
+    // Companion specific function
+    #region Companion functions
+    public void PlayCompanionVoiceLine(string voiceLineID) => Companion.Instance.TriggerVoiceLine(voiceLineID);
+    public void SetCompanionParticleFX(bool state) => Companion.Instance.SetParticleFX(state);
+
+    #endregion
 }

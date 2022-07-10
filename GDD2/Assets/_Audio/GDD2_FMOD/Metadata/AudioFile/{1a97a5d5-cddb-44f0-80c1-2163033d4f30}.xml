@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{1a97a5d5-cddb-44f0-80c1-2163033d4f30}">
+		<property name="assetPath">
+			<value>VoiceLineGameDone.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>22.0499992</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>10.350884353741497</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5c17cebc-c441-4a25-a268-d0e584751061}</destination>
+		</relationship>
+	</object>
+</objects>

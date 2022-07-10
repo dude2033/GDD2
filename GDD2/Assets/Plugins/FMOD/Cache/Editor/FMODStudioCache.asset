@@ -42,11 +42,38 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/FX.bank
   Name: FX
   StudioPath: bank:/FX
-  lastModified: 637888442119427327
+  lastModified: 637930516966901940
   FileSizes:
   - Name: Desktop
     Value: 359296
   Exists: 1
+--- !u!114 &-6721733973814035913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/EndRoom/VoiceLines/GameDone
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/EndRoom/VoiceLines/GameDone
+  Guid:
+    Data1: -662799213
+    Data2: 1126837336
+    Data3: -397812323
+    Data4: -2127573003
+  Banks:
+  - {fileID: 4570712113697275973}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5738960287703348841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,7 +89,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Ambiance.bank
   Name: Ambiance
   StudioPath: bank:/Ambiance
-  lastModified: 637888442119077328
+  lastModified: 637930516966431513
   FileSizes:
   - Name: Desktop
     Value: 2583168
@@ -82,7 +109,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Foley.bank
   Name: Foley
   StudioPath: bank:/Foley
-  lastModified: 637888442119237477
+  lastModified: 637930516966721776
   FileSizes:
   - Name: Desktop
     Value: 17568
@@ -281,12 +308,13 @@ MonoBehaviour:
   - {fileID: -986360134685353563}
   - {fileID: -1867738389974803072}
   - {fileID: -2852447526244684346}
+  - {fileID: -6721733973814035913}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2190150312401722300}
   StringsBanks:
   - {fileID: 7012662071495736635}
-  cacheTime: 637888442119707577
+  cacheTime: 637930516967192200
   cacheVersion: 10
 --- !u!114 &116417730633451536
 MonoBehaviour:
@@ -384,10 +412,10 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637888442119447339
+  lastModified: 637930516966931974
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 2206
   Exists: 1
 --- !u!114 &2537062072775313079
 MonoBehaviour:
@@ -431,10 +459,10 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Voice.bank
   Name: Voice
   StudioPath: bank:/Voice
-  lastModified: 637888442119707577
+  lastModified: 637930516967192200
   FileSizes:
   - Name: Desktop
-    Value: 602272
+    Value: 688288
   Exists: 1
 --- !u!114 &6623953713137487923
 MonoBehaviour:
@@ -478,8 +506,8 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637888442119467359
+  lastModified: 637930516966951987
   FileSizes:
   - Name: Desktop
-    Value: 1532
+    Value: 1704
   Exists: 1

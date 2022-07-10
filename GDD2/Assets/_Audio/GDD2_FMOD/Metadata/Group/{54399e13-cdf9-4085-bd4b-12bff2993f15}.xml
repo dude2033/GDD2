@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{54399e13-cdf9-4085-bd4b-12bff2993f15}">
+		<property name="name">
+			<value>VoiceLines</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{4817319b-d95a-4ffb-95b2-67e67cb30e39}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{74457fab-212a-40cb-a55f-176c0a053d6a}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{7e54ba9f-ec25-440e-8591-ee157ca13c28}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{4817319b-d95a-4ffb-95b2-67e67cb30e39}">
+		<relationship name="effects">
+			<destination>{46f70ec3-e748-4c3b-95d3-6c597945f241}</destination>
+			<destination>{3633403d-5d8b-4f9f-8b70-b5c09e0a18db}</destination>
+			<destination>{8423c388-9b53-4dfb-8702-e3ecccbfa9b7}</destination>
+			<destination>{29e41675-ddb9-42aa-9ce6-28a74a9c2c3f}</destination>
+			<destination>{277cf589-2f88-4146-ac85-69373c913b82}</destination>
+			<destination>{831a7c6a-ffcd-4fc8-badf-602322749eb7}</destination>
+			<destination>{912f93b8-a112-48e0-910a-2fda757f804d}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{74457fab-212a-40cb-a55f-176c0a053d6a}" />
+	<object class="ChorusEffect" id="{46f70ec3-e748-4c3b-95d3-6c597945f241}">
+		<property name="rate">
+			<value>0.879999995</value>
+		</property>
+		<property name="depth">
+			<value>23</value>
+		</property>
+		<property name="mix">
+			<value>83</value>
+		</property>
+	</object>
+	<object class="ChorusEffect" id="{3633403d-5d8b-4f9f-8b70-b5c09e0a18db}">
+		<property name="rate">
+			<value>0.479999989</value>
+		</property>
+		<property name="depth">
+			<value>37.5</value>
+		</property>
+		<property name="mix">
+			<value>81</value>
+		</property>
+	</object>
+	<object class="DelayEffect" id="{8423c388-9b53-4dfb-8702-e3ecccbfa9b7}">
+		<property name="delay">
+			<value>8.60000038</value>
+		</property>
+		<property name="level">
+			<value>-5.5</value>
+		</property>
+	</object>
+	<object class="PitchShifterEffect" id="{29e41675-ddb9-42aa-9ce6-28a74a9c2c3f}">
+		<property name="pitch">
+			<value>1.12</value>
+		</property>
+		<property name="fftSize">
+			<value>2800</value>
+		</property>
+		<property name="overlap">
+			<value>12.6000004</value>
+		</property>
+		<property name="maxChannels">
+			<value>8.80000019</value>
+		</property>
+	</object>
+	<object class="ThreeEQEffect" id="{277cf589-2f88-4146-ac85-69373c913b82}">
+		<property name="lowGain">
+			<value>-5</value>
+		</property>
+		<property name="midGain">
+			<value>2.5</value>
+		</property>
+		<property name="crossoverSlope">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="LimiterEffect" id="{831a7c6a-ffcd-4fc8-badf-602322749eb7}">
+		<property name="boost">
+			<value>6.4000001</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{912f93b8-a112-48e0-910a-2fda757f804d}" />
+</objects>
