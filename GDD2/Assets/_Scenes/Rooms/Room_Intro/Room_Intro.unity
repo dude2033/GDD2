@@ -199,11 +199,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4063334258460450, guid: 7e4d0f164b07d6045919c269526fcd64, type: 3}
   m_PrefabInstance: {fileID: 92956236}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &109105838 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7635881540268154195, guid: ca7991dbea9c41f43b3b5dfbcd685b53, type: 3}
-  m_PrefabInstance: {fileID: 7635881540293332989}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &279363781
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,11 +872,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c88ade47f1a54cb4b8d183d10053fc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyOnSetup:
-  - {fileID: 1258621520}
-  - {fileID: 109105838}
-  - {fileID: 459476515}
+  destroyOnSetup: []
   voiceLineList: []
+  inputActionManager: {fileID: 0}
   setupOnStart: 0
   destroyObjects: 1
 --- !u!114 &596208610
@@ -1910,17 +1903,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
   m_PrefabInstance: {fileID: 1212801035}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1258621520 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 296314184050132104, guid: e632504ce85525447b83568db33922d0, type: 3}
-  m_PrefabInstance: {fileID: 296314185240989400}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1258621521 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 296314184050132105, guid: e632504ce85525447b83568db33922d0, type: 3}
   m_PrefabInstance: {fileID: 296314185240989400}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258621520}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
@@ -8642,6 +8630,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Interaction Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 296314184050132104, guid: e632504ce85525447b83568db33922d0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 296314184050132106, guid: e632504ce85525447b83568db33922d0, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -8811,6 +8803,10 @@ PrefabInstance:
     - target: {fileID: 7635881540268154195, guid: ca7991dbea9c41f43b3b5dfbcd685b53, type: 3}
       propertyPath: m_Name
       value: XR Origin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635881540268154195, guid: ca7991dbea9c41f43b3b5dfbcd685b53, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca7991dbea9c41f43b3b5dfbcd685b53, type: 3}
