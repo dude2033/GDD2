@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Rooms/Room_Credits/RoomCredits.unity
     guid: c2244cfdc56f01b4a93b8cfd542b345b
+  - enabled: 1
+    path: Assets/_Scenes/Rooms/Room_FlyingNumbers/RoomFlyingNumbers.unity
+    guid: 516a3d6d1ddd81e408e4cd9135a80265
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: dd44609afcde0fb409817dd615139ac6, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e3770a24c84059e4b9b89b3ea581fad9, type: 2}
