@@ -4,4 +4,9 @@ using UnityEngine;
 
 public class RoomFlyingNumbersManager : RoomManager
 {
+    [SerializeField] private GameObject flyingNumbers;
+    public void SetFlyingNumbers(bool state)
+    {
+        flyingNumbers.SetActive(state);
+    }
 }
