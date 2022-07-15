@@ -11,6 +11,13 @@ public class PhysicsButton : MonoBehaviour
 {
     [SerializeField] private float threshold = 0.1f;
     [SerializeField] private float deadZone = 0.025f;
+    [SerializeField] private float maxLinear = 0.02f;
+    [SerializeField] private float minLinear = -0.006f;
+    [SerializeField] private direction pushDirection = direction.Y;
+    enum direction
+    {
+        X,Y,Z,None
+    }
     
     public UnityEvent onPressed, onReleased;
 
@@ -32,6 +39,21 @@ public class PhysicsButton : MonoBehaviour
             Pressed();
         if(isPressed && GetValue() - threshold <= 0)
             Released();
+        
+        Vector3 currentPos = transform.localPosition;
+        switch (pushDirection)
+        {
+            case direction.X:
+                currentPos.x = Mathf.Clamp(currentPos.x, minLinear, maxLinear);
+                break;
+            case direction.Y:
+                currentPos.y = Mathf.Clamp(currentPos.y, minLinear, maxLinear);
+                break;
+            case direction.Z:
+                currentPos.z = Mathf.Clamp(currentPos.z, minLinear, maxLinear);
+                break;
+        }
+        transform.localPosition = currentPos;
     }
 
     private float GetValue()

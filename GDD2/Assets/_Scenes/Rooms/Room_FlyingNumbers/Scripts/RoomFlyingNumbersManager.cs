@@ -9,4 +9,9 @@ public class RoomFlyingNumbersManager : RoomManager
     {
         flyingNumbers.SetActive(state);
     }
+
+    public void CodeComplete()
+    {
+        AdvanceRoomFSM();
+    }
 }

@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/FX.bank
   Name: FX
   StudioPath: bank:/FX
-  lastModified: 637930516966901940
+  lastModified: 637934838875383061
   FileSizes:
   - Name: Desktop
-    Value: 359296
+    Value: 373664
   Exists: 1
 --- !u!114 &-6721733973814035913
 MonoBehaviour:
@@ -89,11 +89,38 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Ambiance.bank
   Name: Ambiance
   StudioPath: bank:/Ambiance
-  lastModified: 637930516966431513
+  lastModified: 637934838874995992
   FileSizes:
   - Name: Desktop
     Value: 2583168
   Exists: 1
+--- !u!114 &-5020112350920924831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Button/ValidBeep
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Button/ValidBeep
+  Guid:
+    Data1: 956197886
+    Data2: 1290760028
+    Data3: 242510731
+    Data4: 749686899
+  Banks:
+  - {fileID: -7991598866681863801}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4948495021170851347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,7 +136,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Foley.bank
   Name: Foley
   StudioPath: bank:/Foley
-  lastModified: 637930516966721776
+  lastModified: 637934838875162392
   FileSizes:
   - Name: Desktop
     Value: 17568
@@ -222,6 +249,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-1688693231730881415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Button/InvalidBeeBee
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Button/InvalidBeeBee
+  Guid:
+    Data1: 1290272292
+    Data2: 1111121679
+    Data3: -1787058557
+    Data4: 1333069789
+  Banks:
+  - {fileID: -7991598866681863801}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-986360134685353563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,12 +363,15 @@ MonoBehaviour:
   - {fileID: -1867738389974803072}
   - {fileID: -2852447526244684346}
   - {fileID: -6721733973814035913}
+  - {fileID: -1688693231730881415}
+  - {fileID: 6744635548882980913}
+  - {fileID: -5020112350920924831}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2190150312401722300}
   StringsBanks:
   - {fileID: 7012662071495736635}
-  cacheTime: 637930516967192200
+  cacheTime: 637934838875671772
   cacheVersion: 10
 --- !u!114 &116417730633451536
 MonoBehaviour:
@@ -412,7 +469,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637930516966931974
+  lastModified: 637934838875423045
   FileSizes:
   - Name: Desktop
     Value: 2206
@@ -459,7 +516,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Voice.bank
   Name: Voice
   StudioPath: bank:/Voice
-  lastModified: 637930516967192200
+  lastModified: 637934838875671772
   FileSizes:
   - Name: Desktop
     Value: 688288
@@ -491,6 +548,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6744635548882980913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Button/Beep
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Button/Beep
+  Guid:
+    Data1: 2079904990
+    Data2: 1113057628
+    Data3: 1277514936
+    Data4: 889544629
+  Banks:
+  - {fileID: -7991598866681863801}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7012662071495736635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,8 +590,8 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637930516966951987
+  lastModified: 637934838875438169
   FileSizes:
   - Name: Desktop
-    Value: 1704
+    Value: 1852
   Exists: 1
