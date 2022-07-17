@@ -24,17 +24,24 @@ public class PhysicsButton : MonoBehaviour
     private bool isPressed;
     private Vector3 startPosition;
     private ConfigurableJoint joint;
+    private bool isActive = false;
     
     // Start is called before the first frame update
     void Start()
     {
         startPosition = transform.localPosition;
         joint = GetComponent<ConfigurableJoint>();
+        Invoke(nameof(SetActive), 1f);
     }
+
+    private void SetActive() => isActive = true;
 
     // Update is called once per frame
     void Update()
     {
+        if(!isActive)
+            return;
+        
         if(!isPressed && GetValue() + threshold >= 1)
             Pressed();
         if(isPressed && GetValue() - threshold <= 0)

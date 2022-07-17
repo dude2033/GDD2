@@ -17,16 +17,20 @@ public class ButtonPanel : MonoBehaviour
     private string currentCode = "";
     private int numDigits = 4;
     private int digitIndex = 0;
+    private bool isActive = false;
 
     private void Start()
     {
         numDigits = code.Length;
         ShowNextDigit();
+        Invoke(nameof(SetActive), 1f);
     }
+
+    private void SetActive() => isActive = true;
 
     public void AddNumber(int number)
     {
-        if(solved)
+        if(solved || !isActive)
             return;
 
         currentCode += number.ToString();

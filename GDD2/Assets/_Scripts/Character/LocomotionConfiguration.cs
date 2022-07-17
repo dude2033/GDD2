@@ -14,6 +14,9 @@ public class LocomotionConfiguration : Singleton<LocomotionConfiguration>
     [Header("Rotation")] 
     [SerializeField] private ContinuousTurnProviderBase continuousTurnProvider;
     [SerializeField] private SnapTurnProviderBase snapTurnProvider;
+
+    private bool oneHandInteracting = false;
+    private bool twoHandsInteracting = false;
     
     
     public enum MovementType
@@ -30,14 +33,43 @@ public class LocomotionConfiguration : Singleton<LocomotionConfiguration>
 
     private void OnValidate() => ApplySettings();
 
-    public void ApplySettings()
+    public void SuppressRotation(bool state)
+    {
+        if (state)
+        {
+            if (oneHandInteracting)
+                twoHandsInteracting = true;
+            else
+                oneHandInteracting = true;
+
+            DisableLocomotion();
+        }
+        else
+        {
+            if (twoHandsInteracting)
+                twoHandsInteracting = false;
+            else
+            {
+                ApplySettings();
+                oneHandInteracting = false;
+            }
+        }
+        
+    }
+
+    private void DisableLocomotion()
     {
         teleportationProvider.enabled = false;
         teleportationManager.enabled = false;
         continuousMoveProvider.enabled = false;
         continuousTurnProvider.enabled = false;
         snapTurnProvider.enabled = false;
-        
+    }
+
+    public void ApplySettings()
+    {
+        DisableLocomotion();
+
         switch (movementType)
         {
             case MovementType.continuous:
