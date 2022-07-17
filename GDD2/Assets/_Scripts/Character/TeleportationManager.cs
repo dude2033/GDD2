@@ -78,7 +78,7 @@ public class TeleportationManager : MonoBehaviour
 
     private void OnEnable()
     {
-        activate.Enable();
-        cancel.Enable();
+        activate?.Enable();
+        cancel?.Enable();
     }
 }

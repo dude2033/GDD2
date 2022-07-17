@@ -28,10 +28,7 @@ public class LocomotionConfiguration : Singleton<LocomotionConfiguration>
         snap
     }
 
-    private void OnValidate()
-    {
-        ApplySettings();
-    }
+    private void OnValidate() => ApplySettings();
 
     public void ApplySettings()
     {
