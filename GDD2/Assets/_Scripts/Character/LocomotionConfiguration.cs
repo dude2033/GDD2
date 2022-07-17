@@ -1,11 +1,10 @@
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class LocomotionConfiguration : MonoBehaviour
+public class LocomotionConfiguration : Singleton<LocomotionConfiguration>
 {
     public MovementType movementType;
-    public roationType rotationType;
+    public RoationType rotationType;
 
     [Header("Movement")]
     [SerializeField] private TeleportationProvider teleportationProvider;
@@ -23,13 +22,18 @@ public class LocomotionConfiguration : MonoBehaviour
         teleportation
     }
 
-    public enum roationType
+    public enum RoationType
     {
         continuous,
         snap
     }
 
     private void OnValidate()
+    {
+        ApplySettings();
+    }
+
+    public void ApplySettings()
     {
         teleportationProvider.enabled = false;
         teleportationManager.enabled = false;
@@ -50,12 +54,21 @@ public class LocomotionConfiguration : MonoBehaviour
 
         switch (rotationType)
         {
-            case roationType.continuous:
+            case RoationType.continuous:
                 continuousTurnProvider.enabled = true;
                 break;
-            case roationType.snap:
+            case RoationType.snap:
                 snapTurnProvider.enabled = true;
                 break;
         }
+    }
+    
+
+    protected override void OnApplicationQuitCallback()
+    {
+    }
+
+    protected override void OnEnableCallback()
+    {
     }
 }

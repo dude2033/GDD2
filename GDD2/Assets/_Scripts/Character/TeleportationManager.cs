@@ -15,15 +15,16 @@ public class TeleportationManager : MonoBehaviour
     public TeleportationProvider provider;
     private InputAction thumbstick;
     private bool isActive;
+    private InputAction activate, cancel;
     
     // Start is called before the first frame update
     void Start()
     {
-        var activate = actionAsset.FindActionMap("XRI LeftHand Locomotion").FindAction("Teleport Mode Activate");
+        activate = actionAsset.FindActionMap("XRI LeftHand Locomotion").FindAction("Teleport Mode Activate");
         activate.Enable();
         activate.performed += OnTeleportActivate;
         
-        var cancel = actionAsset.FindActionMap("XRI LeftHand Locomotion").FindAction("Teleport Mode Cancel");
+        cancel = actionAsset.FindActionMap("XRI LeftHand Locomotion").FindAction("Teleport Mode Cancel");
         cancel.Enable();
         cancel.performed += OnTeleportCancel;
 
@@ -66,5 +67,18 @@ public class TeleportationManager : MonoBehaviour
         rayInteractor.lineType = XRRayInteractor.LineType.StraightLine;
         isActive = false;
     }
-    
+
+    private void OnDisable()
+    {
+        activate.Disable();
+        cancel.Disable();
+        rayInteractor.lineType = XRRayInteractor.LineType.StraightLine;
+        isActive = false;
+    }
+
+    private void OnEnable()
+    {
+        activate.Enable();
+        cancel.Enable();
+    }
 }
