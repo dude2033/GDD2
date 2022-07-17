@@ -1,78 +1,81 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using FMODUnity;
-using Unity.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.VFX;
 
 public class ButtonPanel : MonoBehaviour
 {
-    [SerializeField] private int code = 1024;
-    [SerializeField, ReadOnly] private int currentCode = 0;
+    [SerializeField] private string code = "1024";
     [SerializeField] private StudioEventEmitter validBeepEmitter;
     [SerializeField] private StudioEventEmitter invalidBeepEmitter;
     [SerializeField] private VisualEffect flyingNumbersVFX;
+    
     public UnityEvent codeComplete;
-    private int digitIndex = 1000;
-    private int digitIndexMax = 1000;
+
+    private bool solved = false;
+    private string currentCode = "";
+    private int numDigits = 4;
+    private int digitIndex = 0;
 
     private void Start()
     {
-        digitIndexMax = 1;
-        int tmpCode = code;
-        while (tmpCode >= 10)
-        {
-            digitIndexMax *= 10;
-            tmpCode /= 10;
-        }
-        digitIndex = digitIndexMax;
-        ShowNextNumber();
+        numDigits = code.Length;
+        ShowNextDigit();
     }
 
     public void AddNumber(int number)
     {
-        currentCode += digitIndex * number;
+        if(solved)
+            return;
+
+        currentCode += number.ToString();
 
         if (CheckCode())
             HandleCodeValid();
         else
             HandleCodeInvalid();
+        
+        ShowNextDigit();
     }
 
     private void HandleCodeValid()
     {
-        digitIndex /= 10;
-        if (digitIndex <= 0)
+        digitIndex++;
+        if(digitIndex >= numDigits)
             CodeComplete();
-
-        ShowNextNumber();
     }
 
     private void HandleCodeInvalid()
     {
+        currentCode = "";
+        digitIndex = 0;
         invalidBeepEmitter.Play();
-        currentCode = 0;
-        digitIndex = digitIndexMax;
     }
 
-    private void ShowNextNumber()
+    private void ShowNextDigit()
     {
-        // calculate next digit
-        // set VFX property
+        if(digitIndex >= code.Length)
+            return;
+        
+        // ascii to int conversion
+        int nextDigit = code[digitIndex] - '0';
+        flyingNumbersVFX.SetInt("NumberIndex", nextDigit);
     }
     
     private bool CheckCode()
     {
-        return code - code % digitIndex == currentCode;
+        return String.Compare(code, 0, currentCode, 0, digitIndex + 1) == 0;
     }
 
     private void CodeComplete()
     {
+        solved = true;
         validBeepEmitter.Play();
         codeComplete.Invoke();
     }
+
+    #region Debug functions
     
     [ContextMenu("0")]
     public void AddZero() => AddNumber(0);
@@ -103,4 +106,6 @@ public class ButtonPanel : MonoBehaviour
 
     [ContextMenu("9")]
     public void AddNine() => AddNumber(9);
+    
+    #endregion
 }

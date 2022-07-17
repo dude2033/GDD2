@@ -154,10 +154,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneProgression:
-  - {fileID: 102900000, guid: 516a3d6d1ddd81e408e4cd9135a80265, type: 3}
   - {fileID: 102900000, guid: e87b25446f9623f4f900c5b82df8c723, type: 3}
   - {fileID: 102900000, guid: 53f29464d65f36e4f89dcffe4343522c, type: 3}
   - {fileID: 102900000, guid: c4b79c93421774549a661fb7bb49caad, type: 3}
+  - {fileID: 102900000, guid: 516a3d6d1ddd81e408e4cd9135a80265, type: 3}
   - {fileID: 102900000, guid: 8f0ee79fe4ab3084480357cb8509e5c0, type: 3}
   - {fileID: 102900000, guid: c2244cfdc56f01b4a93b8cfd542b345b, type: 3}
   onProgress:
@@ -5266,6 +5266,22 @@ PrefabInstance:
     - target: {fileID: 4308164399526969950, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
       propertyPath: m_Name
       value: XR OriginHands
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308164399957252063, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308164399957252063, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308164399957252063, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308164399957252063, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
