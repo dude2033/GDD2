@@ -228,7 +228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyOnSetup: []
   voiceLineList:
-  - voiceLineID: EndDone
+  - voiceLineID: endDone
     voiceLineReference:
       Guid:
         Data1: -662799213
@@ -237,8 +237,8 @@ MonoBehaviour:
         Data4: -2127573003
       Path: event:/VoiceLines/EndRoom/VoiceLines/GameDone
   inputActionManager: {fileID: 0}
-  setupOnStart: 0
-  destroyObjects: 1
+  setupOnStart: 1
+  destroyObjects: 0
 --- !u!114 &596208610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,14 +283,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"method":{"_baseInfo":"RoomEndManager|PlayCompanionVoiceLine|System.Void","_paramsInfo":"System.String"},"parameters":[{"_type":"System.String","_value":{"$content":"EndDone","$type":"System.String"}}],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"},{"waitTime":{"_value":12.0},"$type":"NodeCanvas.Tasks.Actions.Wait"}]},"_position":{"x":541.0,"y":169.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"actions":[{"method":{"_baseInfo":"RoomEndManager|SetCompanionParticleFX|System.Void","_paramsInfo":"System.Boolean"},"parameters":[{"_type":"System.Boolean","_value":{"$content":true,"$type":"System.Boolean"}}],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"},{"method":{"_baseInfo":"RoomEndManager|StartTransitionToBlack|System.Void","_paramsInfo":""},"parameters":[],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"},{"waitTime":{"_name":"transitionTime","_targetVariableID":"0482b850-43b6-45a3-86c9-5bbebbd7d6aa"},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"method":{"_baseInfo":"RoomEndManager|SetCompanionParticleFX|System.Void","_paramsInfo":"System.Boolean"},"parameters":[{"_type":"System.Boolean","_value":{"$content":false,"$type":"System.Boolean"}}],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"},{"waitTime":{"_value":2.0},"$type":"NodeCanvas.Tasks.Actions.Wait"}]},"_position":{"x":970.0,"y":249.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"method":{"_baseInfo":"RoomEndManager|ProceedToNextRoom|System.Void","_paramsInfo":""},"parameters":[],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"}]},"_position":{"x":1226.0,"y":398.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{"transitionTime":{"_propertyPath":"RoomEndManager.transitionTime","_name":"transitionTime","_id":"0482b850-43b6-45a3-86c9-5bbebbd7d6aa","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"method":{"_baseInfo":"RoomEndManager|PlayCompanionVoiceLine|System.Void","_paramsInfo":"System.String"},"parameters":[{"_type":"System.String","_value":{"$content":"endDone","$type":"System.String"}}],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"},{"waitTime":{"_value":12.0},"$type":"NodeCanvas.Tasks.Actions.Wait"}]},"_position":{"x":597.0,"y":198.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"actions":[{"method":{"_baseInfo":"RoomEndManager|SetCompanionParticleFX|System.Void","_paramsInfo":"System.Boolean"},"parameters":[{"_type":"System.Boolean","_value":{"$content":true,"$type":"System.Boolean"}}],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"},{"method":{"_baseInfo":"RoomEndManager|StartTransitionToBlack|System.Void","_paramsInfo":""},"parameters":[],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"},{"waitTime":{"_name":"transitionTime","_targetVariableID":"0482b850-43b6-45a3-86c9-5bbebbd7d6aa"},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"method":{"_baseInfo":"RoomEndManager|SetCompanionParticleFX|System.Void","_paramsInfo":"System.Boolean"},"parameters":[{"_type":"System.Boolean","_value":{"$content":false,"$type":"System.Boolean"}}],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"},{"waitTime":{"_value":2.0},"$type":"NodeCanvas.Tasks.Actions.Wait"}]},"_position":{"x":916.0,"y":267.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"method":{"_baseInfo":"RoomEndManager|ProceedToNextRoom|System.Void","_paramsInfo":""},"parameters":[],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"}]},"_position":{"x":1239.0,"y":432.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{"transitionTime":{"_propertyPath":"RoomEndManager.transitionTime","_name":"transitionTime","_id":"0482b850-43b6-45a3-86c9-5bbebbd7d6aa","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}}'
   _boundGraphObjectReferences: []
   _boundGraphSource:
     _version: 3.25
     _category: 
     _comments: 
-    _translation: {x: -858, y: 152}
+    _translation: {x: 415.2198, y: 262.05872}
     _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0

@@ -1805,7 +1805,79 @@ MonoBehaviour:
   destroyOnSetup:
   - {fileID: 985520352}
   - {fileID: 1907755898}
-  voiceLineList: []
+  voiceLineList:
+  - voiceLineID: code
+    voiceLineReference:
+      Guid:
+        Data1: 639141070
+        Data2: 1087065519
+        Data3: 303580080
+        Data4: -1945550199
+      Path: event:/VoiceLines/RoomFlyingNumbers/hints/Code
+  - voiceLineID: wearGlasses
+    voiceLineReference:
+      Guid:
+        Data1: -628864937
+        Data2: 1253438120
+        Data3: 534709146
+        Data4: 1156462104
+      Path: event:/VoiceLines/RoomFlyingNumbers/hints/Glasses
+  - voiceLineID: openHatch
+    voiceLineReference:
+      Guid:
+        Data1: -1320936340
+        Data2: 1339483461
+        Data3: -1976755544
+        Data4: 1402068586
+      Path: event:/VoiceLines/RoomFlyingNumbers/hints/Hatch
+  - voiceLineID: look
+    voiceLineReference:
+      Guid:
+        Data1: 2115366893
+        Data2: 1098657767
+        Data3: 1612178597
+        Data4: -99723086
+      Path: event:/VoiceLines/RoomFlyingNumbers/hints/LookAround
+  - voiceLineID: numbers1
+    voiceLineReference:
+      Guid:
+        Data1: 709269383
+        Data2: 1121975641
+        Data3: 1550513552
+        Data4: 326629215
+      Path: event:/VoiceLines/RoomFlyingNumbers/hints/Numbers1
+  - voiceLineID: numbers2
+    voiceLineReference:
+      Guid:
+        Data1: -431244083
+        Data2: 1314424056
+        Data3: 1905495188
+        Data4: 1212177490
+      Path: event:/VoiceLines/RoomFlyingNumbers/hints/Numbers2
+  - voiceLineID: numbers3
+    voiceLineReference:
+      Guid:
+        Data1: -679642618
+        Data2: 1229431575
+        Data3: 1769703346
+        Data4: 469447201
+      Path: event:/VoiceLines/RoomFlyingNumbers/hints/Numbers3
+  - voiceLineID: renovation
+    voiceLineReference:
+      Guid:
+        Data1: -1557828638
+        Data2: 1332280260
+        Data3: 1666848654
+        Data4: 307404733
+      Path: event:/VoiceLines/RoomFlyingNumbers/hints/Renovation
+  - voiceLineID: noMoreHint
+    voiceLineReference:
+      Guid:
+        Data1: 1179511115
+        Data2: 1094219055
+        Data3: 1462006949
+        Data4: -1072791831
+      Path: event:/VoiceLines/General/NoMoreHints
   inputActionManager: {fileID: 764483438}
   setupOnStart: 0
   destroyObjects: 1
@@ -1853,9 +1925,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[]},"_position":{"x":-80.0,"y":155.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[]},"_name":"Code
-    Complete","_position":{"x":560.9853,"y":320.2268},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"method":{"_baseInfo":"RoomFlyingNumbersManager|ProceedToNextRoom|System.Void","_paramsInfo":""},"parameters":[],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"}]},"_position":{"x":774.9654,"y":501.4482},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[{"setTo":1,"overrideAgent":{"_type":"UnityEngine.Transform","_name":"Lid","_targetVariableID":"121a0bc4-4257-49df-89e8-10995c3764ae"},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},{"setTo":0,"overrideAgent":{"_type":"UnityEngine.Transform","_name":"FloorCover","_targetVariableID":"877504c2-3848-45a4-b0b1-e09dbb429f09"},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"}]},"_name":"Show
-    Lid","_position":{"x":94.0,"y":449.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"}],"connections":[{"_condition":{"signalDefinition":{"_value":1},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"checkMode":1,"conditions":[{"signalDefinition":{"_value":2},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"},{"signalDefinition":{"_value":3},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"},{"signalDefinition":{"_value":4},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"},{"signalDefinition":{"_value":5},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"},{"signalDefinition":{"_value":6},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"checkMode":1,"conditions":[{"signalDefinition":{"_value":2},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"},{"signalDefinition":{"_value":6},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"},{"signalDefinition":{"_value":5},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"},{"signalDefinition":{"_value":3},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"signalDefinition":{"_value":1},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"},"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[]},"_position":{"x":-776.6776,"y":123.0922},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_position":{"x":-149.1707,"y":199.6457},"_comment":"wait
+    for despawn","$type":"NodeCanvas.StateMachines.EmptyState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"method":{"_baseInfo":"RoomFlyingNumbersManager|ProceedToNextRoom|System.Void","_paramsInfo":""},"parameters":[],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"}]},"_position":{"x":434.6499,"y":394.8424},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[{"method":{"_baseInfo":"RoomFlyingNumbersManager|PlayCompanionVoiceLine|System.Void","_paramsInfo":"System.String"},"parameters":[{"_type":"System.String","_value":{"$content":"noMoreHint","$type":"System.String"}}],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"}]},"_position":{"x":35.64001,"y":543.3822},"_comment":"open
+    hatch","$type":"NodeCanvas.StateMachines.ActionState","$id":"3"},{"_position":{"x":-449.0,"y":553.0},"$type":"NodeCanvas.StateMachines.EmptyState","$id":"4"},{"_actionList":{"executionMode":1,"actions":[{"setTo":1,"overrideAgent":{"_type":"UnityEngine.Transform","_name":"Lid","_targetVariableID":"121a0bc4-4257-49df-89e8-10995c3764ae"},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},{"setTo":0,"overrideAgent":{"_type":"UnityEngine.Transform","_name":"FloorCover","_targetVariableID":"877504c2-3848-45a4-b0b1-e09dbb429f09"},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},{"boolVariable":{"_name":"hatchSpawned","_targetVariableID":"58ce3375-d1fb-43e5-a69f-a296218f306c"},"$type":"NodeCanvas.Tasks.Actions.SetBoolean"}]},"_name":"Show
+    Lid","_position":{"x":-383.9688,"y":760.9363},"$type":"NodeCanvas.StateMachines.ActionState","$id":"5"},{"_position":{"x":-1001.169,"y":293.4287},"$type":"NodeCanvas.StateMachines.EmptyState","$id":"6"},{"_actionList":{"executionMode":1,"actions":[{"method":{"_baseInfo":"RoomFlyingNumbersManager|PlayCompanionVoiceLine|System.Void","_paramsInfo":"System.String"},"parameters":[{"_type":"System.String","_value":{"$content":"look","$type":"System.String"}}],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"}]},"_position":{"x":-2636.418,"y":425.5252},"_comment":"look
+    around\n","$type":"NodeCanvas.StateMachines.ActionState","$id":"7"},{"_position":{"x":-2913.927,"y":-56.65232},"$type":"NodeCanvas.StateMachines.EmptyState","$id":"8"},{"_position":{"x":-1143.661,"y":599.6461},"$type":"NodeCanvas.StateMachines.EmptyState","$id":"9"},{"_actionList":{"executionMode":1,"actions":[{"valueA":{"_name":"hintIndex","_targetVariableID":"542210c0-6d5e-4294-a287-fd30b1895425"},"valueB":{"_value":1},"$type":"NodeCanvas.Tasks.Actions.SetInt"},{"method":{"_baseInfo":"RoomFlyingNumbersManager|PlayCompanionVoiceLine|System.Void","_paramsInfo":"System.String"},"parameters":[{"_type":"System.String","_value":{"$content":"openHatch","$type":"System.String"}}],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"}]},"_position":{"x":-2453.891,"y":691.2697},"_comment":"open
+    hatch","$type":"NodeCanvas.StateMachines.ActionState","$id":"10"},{"_actionList":{"executionMode":1,"actions":[{"valueA":{"_name":"hintIndex","_targetVariableID":"542210c0-6d5e-4294-a287-fd30b1895425"},"valueB":{"_value":2},"$type":"NodeCanvas.Tasks.Actions.SetInt"},{"method":{"_baseInfo":"RoomFlyingNumbersManager|PlayCompanionVoiceLine|System.Void","_paramsInfo":"System.String"},"parameters":[{"_type":"System.String","_value":{"$content":"wearGlasses","$type":"System.String"}}],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"}]},"_position":{"x":-2279.066,"y":828.9792},"_comment":"wear
+    glasses","$type":"NodeCanvas.StateMachines.ActionState","$id":"11"},{"_actionList":{"executionMode":1,"actions":[{"valueA":{"_name":"hintIndex","_targetVariableID":"542210c0-6d5e-4294-a287-fd30b1895425"},"valueB":{"_value":3},"$type":"NodeCanvas.Tasks.Actions.SetInt"},{"method":{"_baseInfo":"RoomFlyingNumbersManager|PlayCompanionVoiceLine|System.Void","_paramsInfo":"System.String"},"parameters":[{"_type":"System.String","_value":{"$content":"renovation","$type":"System.String"}}],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"}]},"_position":{"x":-2095.163,"y":951.1685},"_comment":"renovation","$type":"NodeCanvas.StateMachines.ActionState","$id":"12"},{"_actionList":{"executionMode":1,"actions":[{"valueA":{"_name":"hintIndex","_targetVariableID":"542210c0-6d5e-4294-a287-fd30b1895425"},"valueB":{"_value":4},"$type":"NodeCanvas.Tasks.Actions.SetInt"},{"method":{"_baseInfo":"RoomFlyingNumbersManager|PlayCompanionVoiceLine|System.Void","_paramsInfo":"System.String"},"parameters":[{"_type":"System.String","_value":{"$content":"numbers1","$type":"System.String"}}],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"}]},"_position":{"x":-1917.386,"y":1065.07},"_comment":"open
+    hatch","$type":"NodeCanvas.StateMachines.ActionState","$id":"13"},{"_actionList":{"executionMode":1,"actions":[{"valueA":{"_name":"hintIndex","_targetVariableID":"542210c0-6d5e-4294-a287-fd30b1895425"},"valueB":{"_value":5},"$type":"NodeCanvas.Tasks.Actions.SetInt"},{"method":{"_baseInfo":"RoomFlyingNumbersManager|PlayCompanionVoiceLine|System.Void","_paramsInfo":"System.String"},"parameters":[{"_type":"System.String","_value":{"$content":"numbers2","$type":"System.String"}}],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"}]},"_position":{"x":-1762.073,"y":1184.288},"_comment":"open
+    hatch","$type":"NodeCanvas.StateMachines.ActionState","$id":"14"},{"_actionList":{"executionMode":1,"actions":[{"valueA":{"_name":"hintIndex","_targetVariableID":"542210c0-6d5e-4294-a287-fd30b1895425"},"valueB":{"_value":6},"$type":"NodeCanvas.Tasks.Actions.SetInt"},{"method":{"_baseInfo":"RoomFlyingNumbersManager|PlayCompanionVoiceLine|System.Void","_paramsInfo":"System.String"},"parameters":[{"_type":"System.String","_value":{"$content":"numbers3","$type":"System.String"}}],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"}]},"_position":{"x":-1603.304,"y":1302.03},"_comment":"open
+    hatch","$type":"NodeCanvas.StateMachines.ActionState","$id":"15"},{"_actionList":{"executionMode":1,"actions":[{"valueA":{"_name":"hintIndex","_targetVariableID":"542210c0-6d5e-4294-a287-fd30b1895425"},"valueB":{"_value":6},"$type":"NodeCanvas.Tasks.Actions.SetInt"},{"method":{"_baseInfo":"RoomFlyingNumbersManager|PlayCompanionVoiceLine|System.Void","_paramsInfo":"System.String"},"parameters":[{"_type":"System.String","_value":{"$content":"code","$type":"System.String"}}],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"}]},"_position":{"x":-1438.068,"y":1426.895},"_comment":"open
+    hatch","$type":"NodeCanvas.StateMachines.ActionState","$id":"16"}],"connections":[{"_condition":{"signalDefinition":{"_value":1},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"checkMode":1,"conditions":[{"signalDefinition":{"_value":2},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"},{"signalDefinition":{"_value":3},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"},{"signalDefinition":{"_value":4},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"},{"signalDefinition":{"_value":5},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"},{"signalDefinition":{"_value":6},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"signalDefinition":{"_value":7},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"signalDefinition":{"_value":3},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"signalDefinition":{"_value":7},"argumentsMap":{},"$type":"NodeCanvas.Tasks.Conditions.CheckSignal"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"hatchSpawned","_targetVariableID":"58ce3375-d1fb-43e5-a69f-a296218f306c"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"hatchSpawned","_targetVariableID":"58ce3375-d1fb-43e5-a69f-a296218f306c"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"hatchSpawned","_targetVariableID":"58ce3375-d1fb-43e5-a69f-a296218f306c"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_sourceNode":{"$ref":"6"},"_targetNode":{"$ref":"7"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"hatchSpawned","_targetVariableID":"58ce3375-d1fb-43e5-a69f-a296218f306c"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_sourceNode":{"$ref":"6"},"_targetNode":{"$ref":"9"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"7"},"_targetNode":{"$ref":"8"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"8"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"hintIndex","_targetVariableID":"542210c0-6d5e-4294-a287-fd30b1895425"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckInt"},"_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"10"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"hintIndex","_targetVariableID":"542210c0-6d5e-4294-a287-fd30b1895425"},"valueB":{"_value":1},"$type":"NodeCanvas.Tasks.Conditions.CheckInt"},"_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"11"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"hintIndex","_targetVariableID":"542210c0-6d5e-4294-a287-fd30b1895425"},"valueB":{"_value":2},"$type":"NodeCanvas.Tasks.Conditions.CheckInt"},"_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"12"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"hintIndex","_targetVariableID":"542210c0-6d5e-4294-a287-fd30b1895425"},"valueB":{"_value":3},"$type":"NodeCanvas.Tasks.Conditions.CheckInt"},"_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"hintIndex","_targetVariableID":"542210c0-6d5e-4294-a287-fd30b1895425"},"valueB":{"_value":4},"$type":"NodeCanvas.Tasks.Conditions.CheckInt"},"_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"14"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"hintIndex","_targetVariableID":"542210c0-6d5e-4294-a287-fd30b1895425"},"valueB":{"_value":5},"$type":"NodeCanvas.Tasks.Conditions.CheckInt"},"_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"15"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"hintIndex","_targetVariableID":"542210c0-6d5e-4294-a287-fd30b1895425"},"valueB":{"_value":6},"$type":"NodeCanvas.Tasks.Conditions.CheckInt"},"_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"8"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"11"},"_targetNode":{"$ref":"8"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"8"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"8"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"14"},"_targetNode":{"$ref":"8"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"15"},"_targetNode":{"$ref":"8"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"8"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{"hatchSpawned":{"_name":"hatchSpawned","_id":"58ce3375-d1fb-43e5-a69f-a296218f306c","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"hintIndex":{"_name":"hintIndex","_id":"542210c0-6d5e-4294-a287-fd30b1895425","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 11400000, guid: 6483a051403ff2944afaf8a65c33ffa2, type: 2}
@@ -1864,11 +1946,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ccb21306da649b2488fdc109947ea826, type: 2}
   - {fileID: 11400000, guid: b676623e20138ec4b8f8b38ecef6369d, type: 2}
   - {fileID: 11400000, guid: 019deb19b4b7d1644ae8b5ce3d6132d6, type: 2}
+  - {fileID: 11400000, guid: ac616db0e36850947a9abf68c0dea63d, type: 2}
   _boundGraphSource:
     _version: 3.25
     _category: 
     _comments: 
-    _translation: {x: 619, y: 214}
+    _translation: {x: 1025, y: 235}
     _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{87e6b4c0-3a57-49ac-b0d6-a66f943bc42a}">
+		<property name="assetPath">
+			<value>room_flying_numbers/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5c17cebc-c441-4a25-a268-d0e584751061}</destination>
+		</relationship>
+	</object>
+</objects>

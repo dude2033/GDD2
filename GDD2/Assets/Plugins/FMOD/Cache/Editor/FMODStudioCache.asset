@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8985836168956127206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/RoomFlyingNumbers/hints/Hatch
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/RoomFlyingNumbers/hints/Hatch
+  Guid:
+    Data1: -1320936340
+    Data2: 1339483461
+    Data3: -1976755544
+    Data4: 1402068586
+  Banks:
+  - {fileID: 4570712113697275973}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-8974560502195526205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,7 +69,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/FX.bank
   Name: FX
   StudioPath: bank:/FX
-  lastModified: 637936575401019826
+  lastModified: 637940865849861761
   FileSizes:
   - Name: Desktop
     Value: 381856
@@ -89,7 +116,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Ambiance.bank
   Name: Ambiance
   StudioPath: bank:/Ambiance
-  lastModified: 637936575399527635
+  lastModified: 637940865847558838
   FileSizes:
   - Name: Desktop
     Value: 2583168
@@ -136,7 +163,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Foley.bank
   Name: Foley
   StudioPath: bank:/Foley
-  lastModified: 637936575400015220
+  lastModified: 637940865848540557
   FileSizes:
   - Name: Desktop
     Value: 17568
@@ -195,6 +222,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 192000
+--- !u!114 &-3519761075470418617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/RoomFlyingNumbers/hints/Numbers2
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/RoomFlyingNumbers/hints/Numbers2
+  Guid:
+    Data1: -431244083
+    Data2: 1314424056
+    Data3: 1905495188
+    Data4: 1212177490
+  Banks:
+  - {fileID: 4570712113697275973}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3052996066176520999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/RoomFlyingNumbers/hints/Renovation
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/RoomFlyingNumbers/hints/Renovation
+  Guid:
+    Data1: -1557828638
+    Data2: 1332280260
+    Data3: 1666848654
+    Data4: 307404733
+  Banks:
+  - {fileID: 4570712113697275973}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2852447526244684346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,6 +330,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 16000
+--- !u!114 &-2152216741247748186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/RoomFlyingNumbers/hints/Numbers3
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/RoomFlyingNumbers/hints/Numbers3
+  Guid:
+    Data1: -679642618
+    Data2: 1229431575
+    Data3: 1769703346
+    Data4: 469447201
+  Banks:
+  - {fileID: 4570712113697275973}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1867738389974803072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,6 +411,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-1329818846136699431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/RoomFlyingNumbers/hints/Glasses
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/RoomFlyingNumbers/hints/Glasses
+  Guid:
+    Data1: -628864937
+    Data2: 1253438120
+    Data3: 534709146
+    Data4: 1156462104
+  Banks:
+  - {fileID: 4570712113697275973}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-986360134685353563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,6 +456,33 @@ MonoBehaviour:
     Data2: 1241540228
     Data3: -2132858992
     Data4: 842025952
+  Banks:
+  - {fileID: 4570712113697275973}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-513403353264907162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/RoomFlyingNumbers/hints/LookAround
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/RoomFlyingNumbers/hints/LookAround
+  Guid:
+    Data1: 2115366893
+    Data2: 1098657767
+    Data3: 1612178597
+    Data4: -99723086
   Banks:
   - {fileID: 4570712113697275973}
   IsStream: 0
@@ -395,12 +557,20 @@ MonoBehaviour:
   - {fileID: -5020112350920924831}
   - {fileID: 8891936375967199042}
   - {fileID: -4786806867092198834}
+  - {fileID: -2152216741247748186}
+  - {fileID: -1329818846136699431}
+  - {fileID: -8985836168956127206}
+  - {fileID: 640047928847186021}
+  - {fileID: -3519761075470418617}
+  - {fileID: 5576525797572544488}
+  - {fileID: -3052996066176520999}
+  - {fileID: -513403353264907162}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2190150312401722300}
   StringsBanks:
   - {fileID: 7012662071495736635}
-  cacheTime: 637936575401816087
+  cacheTime: 637940865851793518
   cacheVersion: 10
 --- !u!114 &116417730633451536
 MonoBehaviour:
@@ -422,6 +592,33 @@ MonoBehaviour:
     Data4: -1995548142
   Banks:
   - {fileID: -7991598866681863801}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &640047928847186021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/RoomFlyingNumbers/hints/Numbers1
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/RoomFlyingNumbers/hints/Numbers1
+  Guid:
+    Data1: 709269383
+    Data2: 1121975641
+    Data3: 1550513552
+    Data4: 326629215
+  Banks:
+  - {fileID: 4570712113697275973}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -498,7 +695,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637936575401060432
+  lastModified: 637940865849891782
   FileSizes:
   - Name: Desktop
     Value: 2206
@@ -545,11 +742,38 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Voice.bank
   Name: Voice
   StudioPath: bank:/Voice
-  lastModified: 637936575401816087
+  lastModified: 637940865851793518
   FileSizes:
   - Name: Desktop
-    Value: 688288
+    Value: 1067712
   Exists: 1
+--- !u!114 &5576525797572544488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/RoomFlyingNumbers/hints/Code
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/RoomFlyingNumbers/hints/Code
+  Guid:
+    Data1: 639141070
+    Data2: 1087065519
+    Data3: 303580080
+    Data4: -1945550199
+  Banks:
+  - {fileID: 4570712113697275973}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6623953713137487923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,10 +843,10 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637936575401081731
+  lastModified: 637940865849921813
   FileSizes:
   - Name: Desktop
-    Value: 1938
+    Value: 2280
   Exists: 1
 --- !u!114 &8891936375967199042
 MonoBehaviour:
