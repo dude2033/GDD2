@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{bacfc937-945e-40ef-b8e0-4ea1f544b494}">
+		<property name="assetPath">
+			<value>TutorialStepDone.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>22.0499992</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>17.763265306122449</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5c17cebc-c441-4a25-a268-d0e584751061}</destination>
+		</relationship>
+	</object>
+</objects>
