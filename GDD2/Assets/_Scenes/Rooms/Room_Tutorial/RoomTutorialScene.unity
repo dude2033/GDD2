@@ -1096,6 +1096,10 @@ PrefabInstance:
       propertyPath: weight
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3181327556489288791, guid: f089574f479298644a53d83d4d468028, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3181327557443560626, guid: f089574f479298644a53d83d4d468028, type: 3}
       propertyPath: m_RootOrder
       value: 3
