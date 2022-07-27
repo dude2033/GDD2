@@ -5726,11 +5726,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 486554393, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
       propertyPath: m_LeftHandSnapTurnAction.m_UseReference
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 486554393, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
       propertyPath: m_RightHandSnapTurnAction.m_UseReference
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 486554396, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
       propertyPath: m_Enabled
@@ -5746,16 +5746,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 486554397, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
       propertyPath: m_LeftHandTurnAction.m_UseReference
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 486554397, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
       propertyPath: m_RightHandTurnAction.m_UseReference
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1103894021, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1143712612}
+    - target: {fileID: 4308164399204889897, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_WidthCurve.m_Curve.Array.data[1].time
+      value: 0.0053273924
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308164399204889897, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_WidthCurve.m_Curve.Array.data[1].value
+      value: 0.9979172
+      objectReference: {fileID: 0}
     - target: {fileID: 4308164399204889911, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
       propertyPath: m_RaycastMask.m_Bits
       value: 51
@@ -5936,6 +5944,14 @@ PrefabInstance:
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4308164401197353139, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_WidthCurve.m_Curve.Array.data[1].time
+      value: 0.0053273924
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308164401197353139, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_WidthCurve.m_Curve.Array.data[1].value
+      value: 0.9979172
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
 --- !u!114 &3960966329714169634 stripped
@@ -5949,6 +5965,306 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 937a1b44a66d2274cb91196b57885121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &3960966329714169635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4308164401197353141, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+  m_PrefabInstance: {fileID: 3960966329714169633}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3960966329714169636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3960966329714169635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2bda48b2a675946907c68e43945328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputActions: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  actionMap: XRI LeftHand Interaction
+  validColorGradientAnchorControl:
+    serializedVersion: 2
+    key0: {r: 0, g: 0, b: 1, a: 1}
+    key1: {r: 0.2216981, g: 1, b: 0.85678035, a: 1}
+    key2: {r: 0.2216981, g: 1, b: 0.85678035, a: 1}
+    key3: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key4: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key5: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key6: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key7: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 65535
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  invalidColorGradientAnchorControl:
+    serializedVersion: 2
+    key0: {r: 0, g: 0, b: 1, a: 1}
+    key1: {r: 1, g: 0, b: 0.1960783, a: 1}
+    key2: {r: 1, g: 0, b: 0.1960783, a: 1}
+    key3: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key4: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key5: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key6: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key7: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 65535
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  validColorGradientNoAnchorControl:
+    serializedVersion: 2
+    key0: {r: 0.985693, g: 0.018382354, b: 0.015749639, a: 1}
+    key1: {r: 0.2216981, g: 1, b: 0.85678035, a: 1}
+    key2: {r: 0.2216981, g: 1, b: 0.85678035, a: 1}
+    key3: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key4: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key5: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key6: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key7: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 65535
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  invalidColorGradientNoAnchorControl:
+    serializedVersion: 2
+    key0: {r: 1, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 0, b: 0, a: 1}
+    key2: {r: 1, g: 0, b: 0, a: 1}
+    key3: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key4: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key5: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key6: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key7: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 65535
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  anchorControlStateChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3960966329714169634}
+        m_TargetAssemblyTypeName: LocomotionConfiguration, Assembly-CSharp
+        m_MethodName: SetMoveState
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &3960966329714169637 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4308164399204889899, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+  m_PrefabInstance: {fileID: 3960966329714169633}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3960966329714169638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3960966329714169637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2bda48b2a675946907c68e43945328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputActions: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  actionMap: XRI RightHand Interaction
+  validColorGradientAnchorControl:
+    serializedVersion: 2
+    key0: {r: 0, g: 0, b: 1, a: 1}
+    key1: {r: 0.2216981, g: 1, b: 0.85678035, a: 1}
+    key2: {r: 0.2216981, g: 1, b: 0.85678035, a: 1}
+    key3: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key4: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key5: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key6: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key7: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 65535
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  invalidColorGradientAnchorControl:
+    serializedVersion: 2
+    key0: {r: 0, g: 0, b: 1, a: 1}
+    key1: {r: 1, g: 0, b: 0.1960783, a: 1}
+    key2: {r: 1, g: 0, b: 0.1960783, a: 1}
+    key3: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 1}
+    key4: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key5: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key6: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key7: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 578
+    atime1: 65535
+    atime2: 65535
+    atime3: 65535
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  validColorGradientNoAnchorControl:
+    serializedVersion: 2
+    key0: {r: 1, g: 0, b: 0, a: 1}
+    key1: {r: 0.2216981, g: 1, b: 0.85678035, a: 1}
+    key2: {r: 0.2216981, g: 1, b: 0.85678035, a: 1}
+    key3: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key4: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key5: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key6: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key7: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 65535
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  invalidColorGradientNoAnchorControl:
+    serializedVersion: 2
+    key0: {r: 1, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 0, b: 0, a: 1}
+    key2: {r: 1, g: 0, b: 0, a: 1}
+    key3: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key4: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key5: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key6: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    key7: {r: 0.7137255, g: 0.8392157, b: 0.84705883, a: 0.60784316}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 65535
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  anchorControlStateChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3960966329714169634}
+        m_TargetAssemblyTypeName: LocomotionConfiguration, Assembly-CSharp
+        m_MethodName: SetRotationState
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5560798379134715790 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2228978841659442046, guid: 7a0ca1daebe8caf448f24c7bce89dafd, type: 3}

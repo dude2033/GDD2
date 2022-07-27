@@ -32,29 +32,32 @@ public class LocomotionConfiguration : Singleton<LocomotionConfiguration>
     }
 
     private void OnValidate() => ApplySettings();
-
-    public void SuppressRotation(bool state)
+    
+    public void SetRotationState(bool state)
     {
         if (state)
         {
-            if (oneHandInteracting)
-                twoHandsInteracting = true;
-            else
-                oneHandInteracting = true;
-
-            DisableLocomotion();
+            ApplySettings();
         }
         else
         {
-            if (twoHandsInteracting)
-                twoHandsInteracting = false;
-            else
-            {
-                ApplySettings();
-                oneHandInteracting = false;
-            }
+            continuousTurnProvider.enabled = false;
+            snapTurnProvider.enabled = false;
         }
-        
+    }
+    
+    public void SetMoveState(bool state)
+    {
+        if (state)
+        {
+            ApplySettings();
+        }
+        else
+        {
+            teleportationProvider.enabled = false;
+            teleportationManager.enabled = false;
+            continuousMoveProvider.enabled = false;
+        }
     }
 
     private void DisableLocomotion()
