@@ -1,5 +1,4 @@
 using UnityEngine;
-using GD.MinMaxSlider;
 
 public class CompanionPositionController : MonoBehaviour
 {
@@ -10,7 +9,6 @@ public class CompanionPositionController : MonoBehaviour
     [SerializeField] private float forceMultiplier = 50;
     [SerializeField] private ForceMode mode = ForceMode.Impulse;
     
-    [MinMaxSlider(0,2)] 
     public Vector2 minMaxDistance = new Vector2(0.5f, 2f);
     
     [Header("Companion")]
