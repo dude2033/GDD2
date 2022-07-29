@@ -16,8 +16,8 @@ TagManager:
   - Socket
   - Companion
   - TeleportationArea
-  - 
-  - 
+  - Bounds
+  - Player
   - Stencil1
   - Stencil2
   - 

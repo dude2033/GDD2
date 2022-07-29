@@ -141,9 +141,27 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: -4352912131077352496, guid: 16c373827abe9b94da531125900a4252, type: 2}
-  - {fileID: -475996230330764661, guid: e3770a24c84059e4b9b89b3ea581fad9, type: 2}
-  - {fileID: 11400000, guid: dd44609afcde0fb409817dd615139ac6, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -163,7 +181,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.DefaultCompany.GDD2_2022
-    Standalone: com.DefaultCompany.TestAgain2020322
+    Standalone: com.DefaultCompany.GDD22022
   buildNumber:
     Standalone: 0
     iPhone: 0

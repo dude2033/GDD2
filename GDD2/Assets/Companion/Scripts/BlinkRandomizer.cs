@@ -1,9 +1,7 @@
-using GD.MinMaxSlider;
 using UnityEngine;
 
 public class BlinkRandomizer : MonoBehaviour
 {
-    [MinMaxSlider(1,15)] 
     public Vector2 minMaxBlinkDelay = new Vector2(3, 5);
 
     private Animator animator;

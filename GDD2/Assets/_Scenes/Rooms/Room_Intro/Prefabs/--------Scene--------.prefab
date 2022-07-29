@@ -11184,6 +11184,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 592601894657865761}
     m_Modifications:
+    - target: {fileID: 5376971379217216780, guid: af2a6f3229192074db2a1d3a347b33f5, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376971379686312154, guid: af2a6f3229192074db2a1d3a347b33f5, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376971380296429020, guid: af2a6f3229192074db2a1d3a347b33f5, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5376971380555646892, guid: af2a6f3229192074db2a1d3a347b33f5, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -11231,6 +11243,10 @@ PrefabInstance:
     - target: {fileID: 5376971380555646893, guid: af2a6f3229192074db2a1d3a347b33f5, type: 3}
       propertyPath: m_Name
       value: BoundingVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376971380749257266, guid: af2a6f3229192074db2a1d3a347b33f5, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af2a6f3229192074db2a1d3a347b33f5, type: 3}
@@ -11735,23 +11751,6 @@ PlayableDirector:
     value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
---- !u!114 &592601896199474603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 358090703946420724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffe3786d0a07de04580f178faab0903e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneToLoad: RoomBatteryScene
-  playableDirector: {fileID: 592601896199474613}
-  radioMeshRenderer: {fileID: 2175590989734143944}
-  flyingNotesVFX: {fileID: 592601896005609486}
-  transitionDuration: 1
 --- !u!114 &592601896199474602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11812,6 +11811,23 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &592601896199474603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358090703946420724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe3786d0a07de04580f178faab0903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: RoomBatteryScene
+  playableDirector: {fileID: 592601896199474613}
+  radioMeshRenderer: {fileID: 2175590989734143944}
+  flyingNotesVFX: {fileID: 592601896005609486}
+  transitionDuration: 1
 --- !u!1001 &592601896526436878
 PrefabInstance:
   m_ObjectHideFlags: 0
