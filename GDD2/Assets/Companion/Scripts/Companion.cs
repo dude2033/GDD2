@@ -26,14 +26,22 @@ public class Companion : Singleton<Companion>
 
     private void Start()
     {
-        // disable the mesh
+        // disable the mesh and trigger zone
         // the companion must be explicitly activated
-        transform.GetChild(0).gameObject.SetActive(false);
+        DisableCompanion();
     }
 
     public void ActivateCompanion()
     {
         transform.GetChild(0).gameObject.SetActive(true);
+        transform.GetChild(1).gameObject.SetActive(true);
+    }
+
+    public void DisableCompanion()
+    {
+        // works but terrible code
+        transform.GetChild(0).gameObject.SetActive(false);
+        transform.GetChild(1).gameObject.SetActive(false);
     }
 
     public void LoadRoomVoiceLineList(List<VoiceLineListEntry> newVoiceLineList)

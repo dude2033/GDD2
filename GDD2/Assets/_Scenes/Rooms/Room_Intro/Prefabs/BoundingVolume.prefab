@@ -141,7 +141,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5376971380555646892}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BoundingVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5376971380569459968}
   - component: {fileID: 5376971380569459971}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider -x
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5376971380605624597}
   - component: {fileID: 5376971380605624596}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider +x
   m_TagString: Untagged
   m_Icon: {fileID: 0}

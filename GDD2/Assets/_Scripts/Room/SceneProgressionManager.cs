@@ -1,32 +1,33 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class SceneProgressionManager : Singleton<SceneProgressionManager>
 {
-    [SerializeField] private List<SceneAsset> sceneProgression;
-    
-    private int currentSceneIndex, lastLoadedSceneIndex;
-    private bool isLoading, isUnloading, reachedEnd;
-    private AsyncOperation loadOP;
-
     public UnityEvent onProgress;
+    private int sceneIndex = 0;
+    private bool isLoading, isUnloading;
+    private AsyncOperation loadOP;
 
     [ContextMenu("Progress to next scene")]
     public void ProgressWithUnloading() => Progress();
-    
+
+    private void Start()
+    {
+        StartCoroutine(StartGame());
+    }
+
     public void Progress(bool suppressEvent = false, bool unloadLastScene = true)
     {
+        // already reached the last scene
+        if(sceneIndex + 1 >= SceneManager.sceneCountInBuildSettings)
+            return;
+        
         if (unloadLastScene)
-        {
             UnloadLastScene();
-        }
 
-        lastLoadedSceneIndex = currentSceneIndex - 1;
+        sceneIndex++;
         loadOP.allowSceneActivation = true;
         
         PreloadNextScene();
@@ -39,7 +40,7 @@ public class SceneProgressionManager : Singleton<SceneProgressionManager>
     private void TryCompleteRoomsetup(AsyncOperation obj)
     {
         loadOP.completed -= TryCompleteRoomsetup;
-        Scene currentScene = SceneManager.GetSceneByName(sceneProgression[lastLoadedSceneIndex].name);
+        Scene currentScene = SceneManager.GetSceneByBuildIndex(sceneIndex);
         SceneManager.SetActiveScene(currentScene);
         
         // terrible code
@@ -56,11 +57,11 @@ public class SceneProgressionManager : Singleton<SceneProgressionManager>
     
     private void PreloadNextScene()
     {
-        if (currentSceneIndex < sceneProgression.Count)
-            StartCoroutine(PreloadScene(sceneProgression[currentSceneIndex++].name));
+        if ((sceneIndex + 1) < SceneManager.sceneCountInBuildSettings)
+            StartCoroutine(PreloadScene(sceneIndex + 1));
     }
     
-    IEnumerator PreloadScene(string sceneName)
+    IEnumerator PreloadScene(int sceneName)
     {
         isLoading = true;
  
@@ -80,7 +81,7 @@ public class SceneProgressionManager : Singleton<SceneProgressionManager>
 
 
 
-    IEnumerator UnloadScene(string sceneName)
+    IEnumerator UnloadScene(int sceneName)
     {
         isUnloading = false;
         AsyncOperation op = SceneManager.UnloadSceneAsync(sceneName);
@@ -96,36 +97,22 @@ public class SceneProgressionManager : Singleton<SceneProgressionManager>
     
     private void UnloadLastScene()
     {
-        if(reachedEnd)
-            return;
-        
-        // -2 because we want to unload the scene before the active one
-        // currentSceneIndex gets increased on preload
-        StartCoroutine(UnloadScene(sceneProgression[currentSceneIndex - 2].name));
-        
-        if (currentSceneIndex == sceneProgression.Count)
-            reachedEnd = true;
+        StartCoroutine(UnloadScene(sceneIndex));
     }
 
     protected override void OnApplicationQuitCallback()
     {
         loadOP.completed -= TryCompleteRoomsetup;
     }
-
+    
+    protected override void OnEnableCallback()
+    {
+    }
+    
     IEnumerator StartGame()
     {
         PreloadNextScene();
-
-        while (isLoading)
-        {
-            yield return 0;
-        }
         Progress(true, false);
-    }
-
-    protected override void OnEnableCallback()
-    {
-        // Load the first scene and wait for completion
-        StartCoroutine(StartGame());
+        yield return null;
     }
 }
