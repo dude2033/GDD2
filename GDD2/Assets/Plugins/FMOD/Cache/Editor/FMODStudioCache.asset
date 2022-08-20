@@ -69,7 +69,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/FX.bank
   Name: FX
   StudioPath: bank:/FX
-  lastModified: 637940865849861761
+  lastModified: 637966055115145360
   FileSizes:
   - Name: Desktop
     Value: 381856
@@ -116,7 +116,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Ambiance.bank
   Name: Ambiance
   StudioPath: bank:/Ambiance
-  lastModified: 637940865847558838
+  lastModified: 637966055113236871
   FileSizes:
   - Name: Desktop
     Value: 2583168
@@ -163,7 +163,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Foley.bank
   Name: Foley
   StudioPath: bank:/Foley
-  lastModified: 637940865848540557
+  lastModified: 637966055114104378
   FileSizes:
   - Name: Desktop
     Value: 17568
@@ -188,6 +188,33 @@ MonoBehaviour:
     Data4: 1776604715
   Banks:
   - {fileID: -7991598866681863801}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4359081551322057835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/RoomBattery/hints/patternChanges
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/RoomBattery/hints/patternChanges
+  Guid:
+    Data1: 1506758290
+    Data2: 1334287398
+    Data3: -1863239785
+    Data4: 1263241363
+  Banks:
+  - {fileID: 4570712113697275973}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -222,6 +249,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 192000
+--- !u!114 &-3809670445630190893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/RoomBattery/hints/plugInCables
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/RoomBattery/hints/plugInCables
+  Guid:
+    Data1: -166722175
+    Data2: 1239455457
+    Data3: -2143259991
+    Data4: -2111663185
+  Banks:
+  - {fileID: 4570712113697275973}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3519761075470418617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,6 +546,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-79001630896112935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/RoomBattery/hints/mirrorPattern
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/RoomBattery/hints/mirrorPattern
+  Guid:
+    Data1: -152577287
+    Data2: 1226361054
+    Data3: -574551924
+    Data4: 1617548077
+  Banks:
+  - {fileID: 4570712113697275973}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-37428237770656202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,12 +646,15 @@ MonoBehaviour:
   - {fileID: 5576525797572544488}
   - {fileID: -3052996066176520999}
   - {fileID: -513403353264907162}
+  - {fileID: -3809670445630190893}
+  - {fileID: -4359081551322057835}
+  - {fileID: -79001630896112935}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2190150312401722300}
   StringsBanks:
   - {fileID: 7012662071495736635}
-  cacheTime: 637940865851793518
+  cacheTime: 637966055118001338
   cacheVersion: 10
 --- !u!114 &116417730633451536
 MonoBehaviour:
@@ -695,7 +779,7 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637940865849891782
+  lastModified: 637966055115185399
   FileSizes:
   - Name: Desktop
     Value: 2206
@@ -742,10 +826,10 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Voice.bank
   Name: Voice
   StudioPath: bank:/Voice
-  lastModified: 637940865851793518
+  lastModified: 637966055118001338
   FileSizes:
   - Name: Desktop
-    Value: 1067712
+    Value: 1165184
   Exists: 1
 --- !u!114 &5576525797572544488
 MonoBehaviour:
@@ -843,10 +927,10 @@ MonoBehaviour:
   Path: Assets/_Audio/GDD2_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637940865849921813
+  lastModified: 637966055115205416
   FileSizes:
   - Name: Desktop
-    Value: 2280
+    Value: 2460
   Exists: 1
 --- !u!114 &8891936375967199042
 MonoBehaviour:

@@ -56,8 +56,19 @@ public class SocketConnectionChecker : MonoBehaviour
     {
         foreach (var socketPair in socketPairList)
         {
-            socketPair.cableSocketA.enabled = false;
-            socketPair.cableSocketB.enabled = false;
+            var listA = socketPair.cableSocketA.interactablesSelected;
+            if (listA.Count > 0)
+            {
+                Transform selectedATransform = listA[0].transform;
+                selectedATransform.GetComponent<BoxCollider>().enabled = false;
+            }
+            
+            var listB = socketPair.cableSocketA.interactablesSelected;
+            if (listB.Count > 0)
+            {
+                Transform selectedATransform = listB[0].transform;
+                selectedATransform.GetComponent<BoxCollider>().enabled = false;
+            }
         }
     }
 }
