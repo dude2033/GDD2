@@ -5426,6 +5426,36 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1086989162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1086989163}
+  m_Layer: 0
+  m_Name: attatch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1086989163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086989162}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3960966329714169639}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1143712612 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 296314184050132105, guid: e632504ce85525447b83568db33922d0, type: 3}
@@ -5437,6 +5467,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1244566003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1244566004}
+  m_Layer: 0
+  m_Name: attatch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1244566004
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244566003}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3960966329714169650}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1344560589
 GameObject:
   m_ObjectHideFlags: 0
@@ -5987,8 +6047,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4308164399204889911, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_UseForceGrab
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308164399204889911, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_AttachTransform
+      value: 
+      objectReference: {fileID: 1086989163}
+    - target: {fileID: 4308164399204889911, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
       propertyPath: m_RaycastMask.m_Bits
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308164399204889911, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_HapticHoverEnterDuration
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308164399204889911, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_HapticHoverEnterIntensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308164399204889911, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_PlayHapticsOnHoverEntered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308164399204889911, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_AudioClipForOnSelectEntered
+      value: 
+      objectReference: {fileID: 8300000, guid: 64575865919f11b48ac488442e873bc7, type: 3}
+    - target: {fileID: 4308164399204889911, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_PlayAudioClipOnSelectEntered
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4308164399204889911, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
@@ -6119,8 +6207,32 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4308164401197353137, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_AttachTransform
+      value: 
+      objectReference: {fileID: 1244566004}
+    - target: {fileID: 4308164401197353137, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
       propertyPath: m_RaycastMask.m_Bits
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308164401197353137, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_HapticHoverEnterDuration
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308164401197353137, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_HapticHoverEnterIntensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308164401197353137, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_PlayHapticsOnHoverEntered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308164401197353137, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_AudioClipForOnSelectEntered
+      value: 
+      objectReference: {fileID: 8300000, guid: 64575865919f11b48ac488442e873bc7, type: 3}
+    - target: {fileID: 4308164401197353137, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+      propertyPath: m_PlayAudioClipOnSelectEntered
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4308164401197353137, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
@@ -6619,6 +6731,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!4 &3960966329714169639 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4308164399204889898, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+  m_PrefabInstance: {fileID: 3960966329714169633}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3960966329714169650 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4308164401197353140, guid: a316b7487fd0bf7489430958a43d5947, type: 3}
+  m_PrefabInstance: {fileID: 3960966329714169633}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5560798379134715790 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2228978841659442046, guid: 7a0ca1daebe8caf448f24c7bce89dafd, type: 3}
